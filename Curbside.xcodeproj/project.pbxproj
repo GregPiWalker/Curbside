@@ -1,0 +1,1130 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* CurbSideAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* CurbSideAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28F335F11007B36200424DE2 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* MainView.xib */; };
+		A6022E8B1379C677003525ED /* EditPharmacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6022E8A1379C677003525ED /* EditPharmacyView.xib */; };
+		A6022E8E1379EE17003525ED /* ContactListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A6022E8D1379EE17003525ED /* ContactListDataSource.m */; };
+		A61736F1134556C200B5B33F /* PatientLookupDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A61736F0134556C100B5B33F /* PatientLookupDataSource.m */; };
+		A61D12BB1343FB7C002415AD /* EditVisitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D12BA1343FB7C002415AD /* EditVisitViewController.m */; };
+		A634451D134BBFCE00A1BA4B /* VisitHistoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A634451C134BBFCE00A1BA4B /* VisitHistoryDataSource.m */; };
+		A641C94613F2F08600DD0FF5 /* LogoBag_220x237.png in Resources */ = {isa = PBXBuildFile; fileRef = A641C94513F2F08600DD0FF5 /* LogoBag_220x237.png */; };
+		A64BFABB13D74AE900689EAD /* Wood2.png in Resources */ = {isa = PBXBuildFile; fileRef = A64BFABA13D74AE900689EAD /* Wood2.png */; };
+		A64BFABD13D74B1200689EAD /* Leather.png in Resources */ = {isa = PBXBuildFile; fileRef = A64BFABC13D74B1200689EAD /* Leather.png */; };
+		A64BFAC213D8B09100689EAD /* StyledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BFAC113D8B09100689EAD /* StyledTextView.m */; };
+		A64DD91F13BAEB36005D6D8D /* blueCheckmark_15x15.png in Resources */ = {isa = PBXBuildFile; fileRef = A64DD91E13BAEB36005D6D8D /* blueCheckmark_15x15.png */; };
+		A651D00D14199CBD0084AD16 /* X-Ray02.png in Resources */ = {isa = PBXBuildFile; fileRef = A651D00A14199CBD0084AD16 /* X-Ray02.png */; };
+		A651D00E14199CBD0084AD16 /* X-Ray01.png in Resources */ = {isa = PBXBuildFile; fileRef = A651D00B14199CBD0084AD16 /* X-Ray01.png */; };
+		A651D00F14199CBD0084AD16 /* X-Ray04.png in Resources */ = {isa = PBXBuildFile; fileRef = A651D00C14199CBD0084AD16 /* X-Ray04.png */; };
+		A651D012141A9B4D0084AD16 /* LogoBag_232x170.png in Resources */ = {isa = PBXBuildFile; fileRef = A651D010141A9B4D0084AD16 /* LogoBag_232x170.png */; };
+		A651D013141A9B4D0084AD16 /* LogoBagBordered_232x170.png in Resources */ = {isa = PBXBuildFile; fileRef = A651D011141A9B4D0084AD16 /* LogoBagBordered_232x170.png */; };
+		A657ED0813384B3D00A2F670 /* red_gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = A657ED0713384B3D00A2F670 /* red_gradient.png */; };
+		A65C6C9213E72DB800735F86 /* IconBag_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = A65C6C9113E72DB800735F86 /* IconBag_114x114.png */; };
+		A65C6C9413E72DC300735F86 /* IconBag_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = A65C6C9313E72DC300735F86 /* IconBag_57x57.png */; };
+		A65C8452135967820027B407 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65C8451135967820027B407 /* AboutView.xib */; };
+		A65C8455135968330027B407 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65C8454135968320027B407 /* AboutViewController.m */; };
+		A65C8457135979B80027B407 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65C8456135979B70027B407 /* MessageUI.framework */; };
+		A66AD2231425748A0079A8F3 /* IASKAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD1FD1425748A0079A8F3 /* IASKAppSettingsViewController.m */; };
+		A66AD2241425748A0079A8F3 /* IASKAppSettingsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD1FF1425748A0079A8F3 /* IASKAppSettingsWebViewController.m */; };
+		A66AD2251425748A0079A8F3 /* IASKSpecifierValuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD2011425748A0079A8F3 /* IASKSpecifierValuesViewController.m */; };
+		A66AD2261425748A0079A8F3 /* IASKSettingsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD2041425748A0079A8F3 /* IASKSettingsReader.m */; };
+		A66AD2271425748A0079A8F3 /* IASKSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD2061425748A0079A8F3 /* IASKSettingsStore.m */; };
+		A66AD2281425748A0079A8F3 /* IASKSettingsStoreFile.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD2081425748A0079A8F3 /* IASKSettingsStoreFile.m */; };
+		A66AD2291425748A0079A8F3 /* IASKSettingsStoreUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD20A1425748A0079A8F3 /* IASKSettingsStoreUserDefaults.m */; };
+		A66AD22A1425748A0079A8F3 /* IASKSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD20C1425748A0079A8F3 /* IASKSpecifier.m */; };
+		A66AD22B1425748A0079A8F3 /* IASKPSSliderSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD20F1425748A0079A8F3 /* IASKPSSliderSpecifierViewCell.m */; };
+		A66AD22C1425748A0079A8F3 /* IASKPSTextFieldSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD2111425748A0079A8F3 /* IASKPSTextFieldSpecifierViewCell.m */; };
+		A66AD22D1425748A0079A8F3 /* IASKPSTitleValueSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD2131425748A0079A8F3 /* IASKPSTitleValueSpecifierViewCell.m */; };
+		A66AD22E1425748A0079A8F3 /* IASKPSToggleSwitchSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD2151425748A0079A8F3 /* IASKPSToggleSwitchSpecifierViewCell.m */; };
+		A66AD22F1425748A0079A8F3 /* IASKSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD2171425748A0079A8F3 /* IASKSlider.m */; };
+		A66AD2301425748A0079A8F3 /* IASKSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD2191425748A0079A8F3 /* IASKSwitch.m */; };
+		A66AD2311425748A0079A8F3 /* IASKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AD21B1425748A0079A8F3 /* IASKTextField.m */; };
+		A66AD2321425748A0079A8F3 /* IASKAppSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66AD21D1425748A0079A8F3 /* IASKAppSettingsView.xib */; };
+		A66AD2331425748A0079A8F3 /* IASKAppSettingsWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66AD21E1425748A0079A8F3 /* IASKAppSettingsWebView.xib */; };
+		A66AD2341425748A0079A8F3 /* IASKPSSliderSpecifierViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66AD21F1425748A0079A8F3 /* IASKPSSliderSpecifierViewCell.xib */; };
+		A66AD2351425748A0079A8F3 /* IASKPSTextFieldSpecifierViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66AD2201425748A0079A8F3 /* IASKPSTextFieldSpecifierViewCell.xib */; };
+		A66AD2361425748A0079A8F3 /* IASKPSToggleSwitchSpecifierViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66AD2211425748A0079A8F3 /* IASKPSToggleSwitchSpecifierViewCell.xib */; };
+		A66AD2371425748A0079A8F3 /* IASKSpecifierValuesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66AD2221425748A0079A8F3 /* IASKSpecifierValuesView.xib */; };
+		A66AD23F14258DEE0079A8F3 /* gears_26x28.png in Resources */ = {isa = PBXBuildFile; fileRef = A66AD23E14258DEE0079A8F3 /* gears_26x28.png */; };
+		A6705B8B13B262B50038C912 /* PharmacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6705B8A13B262B50038C912 /* PharmacyViewController.m */; };
+		A6705B8D13B26A7B0038C912 /* PharmacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6705B8C13B26A7B0038C912 /* PharmacyView.xib */; };
+		A67159AE134D992100842C72 /* RxListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A67159AD134D992100842C72 /* RxListDataSource.m */; };
+		A67159B2134EA0CE00842C72 /* EditRxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67159B1134EA0CE00842C72 /* EditRxViewController.m */; };
+		A6720A191377706C0009EAAF /* SimplePickerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A6720A181377706C0009EAAF /* SimplePickerDataSource.m */; };
+		A677B9B31353F971006D33B9 /* ViewControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A677B9B21353F970006D33B9 /* ViewControllerBase.m */; };
+		A677B9B6135401CB006D33B9 /* EditPharmacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A677B9B5135401CA006D33B9 /* EditPharmacyViewController.m */; };
+		A677B9B913576657006D33B9 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A677B9B813576656006D33B9 /* Utilities.m */; };
+		A68E912F17650B2100CE3026 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68E912C17650B2100CE3026 /* LaunchImage-568h@2x.png */; };
+		A68E913017650B2100CE3026 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A68E912D17650B2100CE3026 /* LaunchImage.png */; };
+		A68E913117650B2100CE3026 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68E912E17650B2100CE3026 /* LaunchImage@2x.png */; };
+		A6906C1513BCD81F00E89C27 /* SetDefaultMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6906C1413BCD81F00E89C27 /* SetDefaultMenuItem.m */; };
+		A6911C5D13D8FA9200DB0B4C /* light_blue_grad_160x37.png in Resources */ = {isa = PBXBuildFile; fileRef = A6911C5C13D8FA9200DB0B4C /* light_blue_grad_160x37.png */; };
+		A6911C6413D95ACC00DB0B4C /* Scrubs01.png in Resources */ = {isa = PBXBuildFile; fileRef = A6911C6013D95ACB00DB0B4C /* Scrubs01.png */; };
+		A6911C6513D95ACC00DB0B4C /* Scrubs02.png in Resources */ = {isa = PBXBuildFile; fileRef = A6911C6113D95ACB00DB0B4C /* Scrubs02.png */; };
+		A6911C6613D95ACC00DB0B4C /* Scrubs03.png in Resources */ = {isa = PBXBuildFile; fileRef = A6911C6213D95ACB00DB0B4C /* Scrubs03.png */; };
+		A6911C6713D95ACC00DB0B4C /* Scrubs04.png in Resources */ = {isa = PBXBuildFile; fileRef = A6911C6313D95ACB00DB0B4C /* Scrubs04.png */; };
+		A6911C7013DA070200DB0B4C /* VisualThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6911C6F13DA06FC00DB0B4C /* VisualThemeManager.m */; };
+		A6911C7213DA241700DB0B4C /* Wood1.png in Resources */ = {isa = PBXBuildFile; fileRef = A6911C7113DA241700DB0B4C /* Wood1.png */; };
+		A6911C8013DA6B4600DB0B4C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6911C7F13DA6B4100DB0B4C /* Settings.bundle */; };
+		A699D46E132EE6990087895F /* PatientTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A699D46D132EE6990087895F /* PatientTableViewCell.m */; };
+		A699D471132EE7500087895F /* PatientsByNameDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A699D470132EE7500087895F /* PatientsByNameDataSource.m */; };
+		A699D6B613313FD30087895F /* PatientDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A699D6B513313FD30087895F /* PatientDataSource.m */; };
+		A699DB271333D3870087895F /* TableCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A699DB261333D3870087895F /* TableCellFactory.m */; };
+		A6A2738D17654BE7005EBE71 /* Scrubs03-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2738017654BE7005EBE71 /* Scrubs03-568@2x.png */; };
+		A6A2738E17654BE7005EBE71 /* Scrubs01-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2738117654BE7005EBE71 /* Scrubs01-568@2x.png */; };
+		A6A2738F17654BE7005EBE71 /* Scrubs02-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2738217654BE7005EBE71 /* Scrubs02-568@2x.png */; };
+		A6A2739017654BE7005EBE71 /* Scrubs04-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2738317654BE7005EBE71 /* Scrubs04-568@2x.png */; };
+		A6A2739117654BE7005EBE71 /* Leather-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2738417654BE7005EBE71 /* Leather-568@2x.png */; };
+		A6A2739217654BE7005EBE71 /* Wood1-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2738517654BE7005EBE71 /* Wood1-568@2x.png */; };
+		A6A2739317654BE7005EBE71 /* Wood2-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2738617654BE7005EBE71 /* Wood2-568@2x.png */; };
+		A6A2739417654BE7005EBE71 /* X-Ray03-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2738717654BE7005EBE71 /* X-Ray03-568@2x.png */; };
+		A6A2739717654BE7005EBE71 /* X-Ray04-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2738A17654BE7005EBE71 /* X-Ray04-568@2x.png */; };
+		A6A2739817654BE7005EBE71 /* X-Ray02-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2738B17654BE7005EBE71 /* X-Ray02-568@2x.png */; };
+		A6A2739917654BE7005EBE71 /* X-Ray01-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2738C17654BE7005EBE71 /* X-Ray01-568@2x.png */; };
+		A6A2739E17654DC9005EBE71 /* Pills01-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2739A17654DC9005EBE71 /* Pills01-568@2x.png */; };
+		A6A2739F17654DC9005EBE71 /* Pills02-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2739B17654DC9005EBE71 /* Pills02-568@2x.png */; };
+		A6A273A017654DC9005EBE71 /* Pills03-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2739C17654DC9005EBE71 /* Pills03-568@2x.png */; };
+		A6A273A117654DC9005EBE71 /* Pills04-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A2739D17654DC9005EBE71 /* Pills04-568@2x.png */; };
+		A6A354FD13F99C3B00642F92 /* HtmlReportHeader.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6A354FC13F99C3B00642F92 /* HtmlReportHeader.txt */; };
+		A6A354FF13F99C4700642F92 /* HtmlReportFooter.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6A354FE13F99C4700642F92 /* HtmlReportFooter.txt */; };
+		A6A3550113F99C5700642F92 /* HtmlVisitHeader.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6A3550013F99C5700642F92 /* HtmlVisitHeader.txt */; };
+		A6A3550A13F99C6100642F92 /* HtmlPrescriptionBody1.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6A3550213F99C6100642F92 /* HtmlPrescriptionBody1.txt */; };
+		A6A3550B13F99C6100642F92 /* HtmlPrescriptionBody2.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6A3550313F99C6100642F92 /* HtmlPrescriptionBody2.txt */; };
+		A6A3550C13F99C6100642F92 /* HtmlPrescriptionBody3.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6A3550413F99C6100642F92 /* HtmlPrescriptionBody3.txt */; };
+		A6A3550D13F99C6100642F92 /* HtmlPrescriptionFooter.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6A3550513F99C6100642F92 /* HtmlPrescriptionFooter.txt */; };
+		A6A3550E13F99C6100642F92 /* HtmlPrescriptionHeader.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6A3550613F99C6100642F92 /* HtmlPrescriptionHeader.txt */; };
+		A6A3550F13F99C6100642F92 /* HtmlVisitBody1.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6A3550713F99C6100642F92 /* HtmlVisitBody1.txt */; };
+		A6A3551013F99C6100642F92 /* HtmlVisitBody2.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6A3550813F99C6100642F92 /* HtmlVisitBody2.txt */; };
+		A6A3551113F99C6100642F92 /* HtmlVisitFooter.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6A3550913F99C6100642F92 /* HtmlVisitFooter.txt */; };
+		A6A3A38A132460CF0067CCB6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A388132460CF0067CCB6 /* MainViewController.m */; };
+		A6A3A3F61324ABCC0067CCB6 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A3ED1324ABCC0067CCB6 /* Contact.m */; };
+		A6A3A3F71324ABCC0067CCB6 /* Medication.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A3EF1324ABCC0067CCB6 /* Medication.m */; };
+		A6A3A3F81324ABCC0067CCB6 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A3F11324ABCC0067CCB6 /* Patient.m */; };
+		A6A3A3F91324ABCC0067CCB6 /* Pharmacy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A3F31324ABCC0067CCB6 /* Pharmacy.m */; };
+		A6A3A3FA1324ABCC0067CCB6 /* Prescription.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A3F51324ABCC0067CCB6 /* Prescription.m */; };
+		A6A3A3FD1324ABFB0067CCB6 /* Visit.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A3FC1324ABFB0067CCB6 /* Visit.m */; };
+		A6A3A479132566220067CCB6 /* VisitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A478132566220067CCB6 /* VisitViewController.m */; };
+		A6A3A47C132566340067CCB6 /* VisitHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A47B132566340067CCB6 /* VisitHistoryViewController.m */; };
+		A6A3A47F132566FF0067CCB6 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A47E132566FF0067CCB6 /* MoreViewController.m */; };
+		A6A3A58F1325BFB90067CCB6 /* RxHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A3A58E1325BFB90067CCB6 /* RxHistoryView.xib */; };
+		A6A3A5911325BFE50067CCB6 /* VisitHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A3A5901325BFE50067CCB6 /* VisitHistoryView.xib */; };
+		A6A3A5951325C0390067CCB6 /* EditVisitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A3A5941325C0390067CCB6 /* EditVisitView.xib */; };
+		A6A3A5971325C0580067CCB6 /* MoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A3A5961325C0580067CCB6 /* MoreView.xib */; };
+		A6A3A6E313275D0C0067CCB6 /* ApplicationSupervisor.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A6E213275D0C0067CCB6 /* ApplicationSupervisor.m */; };
+		A6A3A6ED132816DA0067CCB6 /* PatientListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A6EC132816DA0067CCB6 /* PatientListViewController.m */; };
+		A6A3A707132819EC0067CCB6 /* PatientListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A3A706132819EC0067CCB6 /* PatientListView.xib */; };
+		A6A3A71713281E510067CCB6 /* EditPatientView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A3A71613281E510067CCB6 /* EditPatientView.xib */; };
+		A6A3A71A13281E700067CCB6 /* EditPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A3A71913281E700067CCB6 /* EditPatientViewController.m */; };
+		A6A7990B132B0D4100395328 /* PatientView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A7990A132B0D4100395328 /* PatientView.xib */; };
+		A6A79915132B0EBF00395328 /* PatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A79914132B0EBF00395328 /* PatientViewController.m */; };
+		A6A7996B132B569F00395328 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A7996A132B569F00395328 /* AddressBook.framework */; };
+		A6A7996F132B56BA00395328 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A7996E132B56BA00395328 /* AddressBookUI.framework */; };
+		A6AE849413D4D8FA00B4B72C /* UsageTipsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6AE849313D4D8FA00B4B72C /* UsageTipsView.xib */; };
+		A6AE849713D4DA0100B4B72C /* UsageTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AE849613D4DA0100B4B72C /* UsageTipsViewController.m */; };
+		A6AE849913D4FFBD00B4B72C /* UsageTips.html in Resources */ = {isa = PBXBuildFile; fileRef = A6AE849813D4FFBD00B4B72C /* UsageTips.html */; };
+		A6B1AC22138F594C00281BA6 /* OrderedMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B1AC21138F594C00281BA6 /* OrderedMutableDictionary.m */; };
+		A6B305B913DBD75400A8CF04 /* white_grad_160x37.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B305B813DBD75400A8CF04 /* white_grad_160x37.png */; };
+		A6B305BF13DC104B00A8CF04 /* NotificationArgs.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B305BE13DC104300A8CF04 /* NotificationArgs.m */; };
+		A6B305C113DD1A6100A8CF04 /* brown_grad_160x37.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B305C013DD1A6100A8CF04 /* brown_grad_160x37.png */; };
+		A6B305C313DD1CD100A8CF04 /* tan_grad_160x37.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B305C213DD1CD100A8CF04 /* tan_grad_160x37.png */; };
+		A6B7AC8913DF57130015EF6A /* X-Ray03.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B7AC8813DF57130015EF6A /* X-Ray03.png */; };
+		A6B7AC9413E14C8E0015EF6A /* Pills01.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B7AC9013E14C8E0015EF6A /* Pills01.png */; };
+		A6B7AC9513E14C8E0015EF6A /* Pills02.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B7AC9113E14C8E0015EF6A /* Pills02.png */; };
+		A6B7AC9613E14C8E0015EF6A /* Pills03.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B7AC9213E14C8E0015EF6A /* Pills03.png */; };
+		A6B7AC9713E14C8E0015EF6A /* Pills04.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B7AC9313E14C8E0015EF6A /* Pills04.png */; };
+		A6B7AC9913E14F9B0015EF6A /* black_grad_160x37.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B7AC9813E14F9B0015EF6A /* black_grad_160x37.png */; };
+		A6B97F721350CC83009A3C2D /* PrescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B97F711350CC83009A3C2D /* PrescriptionView.xib */; };
+		A6D832941404B5F700D52B8C /* NSDataCompressionCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D832931404B5F700D52B8C /* NSDataCompressionCategory.m */; };
+		A6D832961404B8BD00D52B8C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D832951404B8BD00D52B8C /* libz.dylib */; };
+		A6D8329B140599C200D52B8C /* FileArchiveResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D8329A140599C100D52B8C /* FileArchiveResult.m */; };
+		A6E28F38143A23EE00B6889C /* LookupDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E28F37143A23ED00B6889C /* LookupDataSource.m */; };
+		A6E28F3B143A2FD300B6889C /* PharmacyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E28F3A143A2FD300B6889C /* PharmacyTableViewCell.m */; };
+		A6E28F3E143B84A600B6889C /* PharmacyLookupDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E28F3D143B84A500B6889C /* PharmacyLookupDataSource.m */; };
+		A6E3093B137230F20068406E /* MedicationLookupDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E3093A137230F20068406E /* MedicationLookupDataSource.m */; };
+		A6EF14391401932600116AD7 /* ModificationTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EF14371401932400116AD7 /* ModificationTracker.m */; };
+		A6F2303B133AAC48005CDD9D /* EnumsToStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F2303A133AAC48005CDD9D /* EnumsToStrings.m */; };
+		A6F2303E133BB851005CDD9D /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F2303D133BB84D005CDD9D /* HistoryViewController.m */; };
+		A6F23041133BB8E6005CDD9D /* HistoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F23040133BB8E5005CDD9D /* HistoryDataSource.m */; };
+		A6F23043133C0F18005CDD9D /* EditPrescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F23042133C0F18005CDD9D /* EditPrescriptionView.xib */; };
+		A6F23046133C0FBE005CDD9D /* RxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F23045133C0FBA005CDD9D /* RxViewController.m */; };
+		A6F2304A133C15BE005CDD9D /* VisitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F23049133C15BE005CDD9D /* VisitView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* CurbSideAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurbSideAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* CurbSideAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurbSideAppDelegate.m; sourceTree = "<group>"; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28F335F01007B36200424DE2 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6022E8A1379C677003525ED /* EditPharmacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditPharmacyView.xib; sourceTree = "<group>"; };
+		A6022E8C1379EE16003525ED /* ContactListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListDataSource.h; sourceTree = "<group>"; };
+		A6022E8D1379EE17003525ED /* ContactListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListDataSource.m; sourceTree = "<group>"; };
+		A61736EF134556C100B5B33F /* PatientLookupDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientLookupDataSource.h; sourceTree = "<group>"; };
+		A61736F0134556C100B5B33F /* PatientLookupDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientLookupDataSource.m; sourceTree = "<group>"; };
+		A61D12B91343FB7C002415AD /* EditVisitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditVisitViewController.h; sourceTree = "<group>"; };
+		A61D12BA1343FB7C002415AD /* EditVisitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditVisitViewController.m; sourceTree = "<group>"; };
+		A634451B134BBFCE00A1BA4B /* VisitHistoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitHistoryDataSource.h; sourceTree = "<group>"; };
+		A634451C134BBFCE00A1BA4B /* VisitHistoryDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitHistoryDataSource.m; sourceTree = "<group>"; };
+		A641C94513F2F08600DD0FF5 /* LogoBag_220x237.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoBag_220x237.png; sourceTree = "<group>"; };
+		A64BFABA13D74AE900689EAD /* Wood2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wood2.png; sourceTree = "<group>"; };
+		A64BFABC13D74B1200689EAD /* Leather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leather.png; sourceTree = "<group>"; };
+		A64BFABE13D8AD2A00689EAD /* StyledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyledTextView.h; sourceTree = "<group>"; };
+		A64BFAC113D8B09100689EAD /* StyledTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyledTextView.m; sourceTree = "<group>"; };
+		A64DD91E13BAEB36005D6D8D /* blueCheckmark_15x15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueCheckmark_15x15.png; sourceTree = "<group>"; };
+		A651D00A14199CBD0084AD16 /* X-Ray02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X-Ray02.png"; sourceTree = "<group>"; };
+		A651D00B14199CBD0084AD16 /* X-Ray01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X-Ray01.png"; sourceTree = "<group>"; };
+		A651D00C14199CBD0084AD16 /* X-Ray04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X-Ray04.png"; sourceTree = "<group>"; };
+		A651D010141A9B4D0084AD16 /* LogoBag_232x170.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoBag_232x170.png; sourceTree = "<group>"; };
+		A651D011141A9B4D0084AD16 /* LogoBagBordered_232x170.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoBagBordered_232x170.png; sourceTree = "<group>"; };
+		A657ED0713384B3D00A2F670 /* red_gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_gradient.png; sourceTree = "<group>"; };
+		A65C6C9113E72DB800735F86 /* IconBag_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconBag_114x114.png; sourceTree = "<group>"; };
+		A65C6C9313E72DC300735F86 /* IconBag_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconBag_57x57.png; sourceTree = "<group>"; };
+		A65C8451135967820027B407 /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutView.xib; sourceTree = "<group>"; };
+		A65C8453135968320027B407 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		A65C8454135968320027B407 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		A65C8456135979B70027B407 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		A66AD1FC1425748A0079A8F3 /* IASKAppSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKAppSettingsViewController.h; sourceTree = "<group>"; };
+		A66AD1FD1425748A0079A8F3 /* IASKAppSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKAppSettingsViewController.m; sourceTree = "<group>"; };
+		A66AD1FE1425748A0079A8F3 /* IASKAppSettingsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKAppSettingsWebViewController.h; sourceTree = "<group>"; };
+		A66AD1FF1425748A0079A8F3 /* IASKAppSettingsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKAppSettingsWebViewController.m; sourceTree = "<group>"; };
+		A66AD2001425748A0079A8F3 /* IASKSpecifierValuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSpecifierValuesViewController.h; sourceTree = "<group>"; };
+		A66AD2011425748A0079A8F3 /* IASKSpecifierValuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSpecifierValuesViewController.m; sourceTree = "<group>"; };
+		A66AD2031425748A0079A8F3 /* IASKSettingsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsReader.h; sourceTree = "<group>"; };
+		A66AD2041425748A0079A8F3 /* IASKSettingsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsReader.m; sourceTree = "<group>"; };
+		A66AD2051425748A0079A8F3 /* IASKSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsStore.h; sourceTree = "<group>"; };
+		A66AD2061425748A0079A8F3 /* IASKSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsStore.m; sourceTree = "<group>"; };
+		A66AD2071425748A0079A8F3 /* IASKSettingsStoreFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsStoreFile.h; sourceTree = "<group>"; };
+		A66AD2081425748A0079A8F3 /* IASKSettingsStoreFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsStoreFile.m; sourceTree = "<group>"; };
+		A66AD2091425748A0079A8F3 /* IASKSettingsStoreUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsStoreUserDefaults.h; sourceTree = "<group>"; };
+		A66AD20A1425748A0079A8F3 /* IASKSettingsStoreUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsStoreUserDefaults.m; sourceTree = "<group>"; };
+		A66AD20B1425748A0079A8F3 /* IASKSpecifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSpecifier.h; sourceTree = "<group>"; };
+		A66AD20C1425748A0079A8F3 /* IASKSpecifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSpecifier.m; sourceTree = "<group>"; };
+		A66AD20E1425748A0079A8F3 /* IASKPSSliderSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSSliderSpecifierViewCell.h; sourceTree = "<group>"; };
+		A66AD20F1425748A0079A8F3 /* IASKPSSliderSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSSliderSpecifierViewCell.m; sourceTree = "<group>"; };
+		A66AD2101425748A0079A8F3 /* IASKPSTextFieldSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSTextFieldSpecifierViewCell.h; sourceTree = "<group>"; };
+		A66AD2111425748A0079A8F3 /* IASKPSTextFieldSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSTextFieldSpecifierViewCell.m; sourceTree = "<group>"; };
+		A66AD2121425748A0079A8F3 /* IASKPSTitleValueSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSTitleValueSpecifierViewCell.h; sourceTree = "<group>"; };
+		A66AD2131425748A0079A8F3 /* IASKPSTitleValueSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSTitleValueSpecifierViewCell.m; sourceTree = "<group>"; };
+		A66AD2141425748A0079A8F3 /* IASKPSToggleSwitchSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSToggleSwitchSpecifierViewCell.h; sourceTree = "<group>"; };
+		A66AD2151425748A0079A8F3 /* IASKPSToggleSwitchSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSToggleSwitchSpecifierViewCell.m; sourceTree = "<group>"; };
+		A66AD2161425748A0079A8F3 /* IASKSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSlider.h; sourceTree = "<group>"; };
+		A66AD2171425748A0079A8F3 /* IASKSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSlider.m; sourceTree = "<group>"; };
+		A66AD2181425748A0079A8F3 /* IASKSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSwitch.h; sourceTree = "<group>"; };
+		A66AD2191425748A0079A8F3 /* IASKSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSwitch.m; sourceTree = "<group>"; };
+		A66AD21A1425748A0079A8F3 /* IASKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKTextField.h; sourceTree = "<group>"; };
+		A66AD21B1425748A0079A8F3 /* IASKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKTextField.m; sourceTree = "<group>"; };
+		A66AD21D1425748A0079A8F3 /* IASKAppSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKAppSettingsView.xib; sourceTree = "<group>"; };
+		A66AD21E1425748A0079A8F3 /* IASKAppSettingsWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKAppSettingsWebView.xib; sourceTree = "<group>"; };
+		A66AD21F1425748A0079A8F3 /* IASKPSSliderSpecifierViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKPSSliderSpecifierViewCell.xib; sourceTree = "<group>"; };
+		A66AD2201425748A0079A8F3 /* IASKPSTextFieldSpecifierViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKPSTextFieldSpecifierViewCell.xib; sourceTree = "<group>"; };
+		A66AD2211425748A0079A8F3 /* IASKPSToggleSwitchSpecifierViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKPSToggleSwitchSpecifierViewCell.xib; sourceTree = "<group>"; };
+		A66AD2221425748A0079A8F3 /* IASKSpecifierValuesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKSpecifierValuesView.xib; sourceTree = "<group>"; };
+		A66AD23E14258DEE0079A8F3 /* gears_26x28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gears_26x28.png; sourceTree = "<group>"; };
+		A6705B8913B262B40038C912 /* PharmacyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PharmacyViewController.h; sourceTree = "<group>"; };
+		A6705B8A13B262B50038C912 /* PharmacyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PharmacyViewController.m; sourceTree = "<group>"; };
+		A6705B8C13B26A7B0038C912 /* PharmacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PharmacyView.xib; sourceTree = "<group>"; };
+		A67159AC134D992100842C72 /* RxListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxListDataSource.h; sourceTree = "<group>"; };
+		A67159AD134D992100842C72 /* RxListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RxListDataSource.m; sourceTree = "<group>"; };
+		A67159AF134DA47F00842C72 /* PropertyChangePublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyChangePublisher.h; sourceTree = "<group>"; };
+		A67159B0134EA0CD00842C72 /* EditRxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditRxViewController.h; sourceTree = "<group>"; };
+		A67159B1134EA0CE00842C72 /* EditRxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditRxViewController.m; sourceTree = "<group>"; };
+		A6720A171377706C0009EAAF /* SimplePickerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePickerDataSource.h; sourceTree = "<group>"; };
+		A6720A181377706C0009EAAF /* SimplePickerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePickerDataSource.m; sourceTree = "<group>"; };
+		A677B9B11353F96F006D33B9 /* ViewControllerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerBase.h; sourceTree = "<group>"; };
+		A677B9B21353F970006D33B9 /* ViewControllerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerBase.m; sourceTree = "<group>"; };
+		A677B9B4135401C9006D33B9 /* EditPharmacyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPharmacyViewController.h; sourceTree = "<group>"; };
+		A677B9B5135401CA006D33B9 /* EditPharmacyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPharmacyViewController.m; sourceTree = "<group>"; };
+		A677B9B713576656006D33B9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		A677B9B813576656006D33B9 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		A68E912C17650B2100CE3026 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		A68E912D17650B2100CE3026 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		A68E912E17650B2100CE3026 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		A6906C0A13BCD33900E89C27 /* LongPressEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongPressEventHandler.h; sourceTree = "<group>"; };
+		A6906C1313BCD81F00E89C27 /* SetDefaultMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetDefaultMenuItem.h; sourceTree = "<group>"; };
+		A6906C1413BCD81F00E89C27 /* SetDefaultMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetDefaultMenuItem.m; sourceTree = "<group>"; };
+		A6911C5C13D8FA9200DB0B4C /* light_blue_grad_160x37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_blue_grad_160x37.png; sourceTree = "<group>"; };
+		A6911C6013D95ACB00DB0B4C /* Scrubs01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scrubs01.png; sourceTree = "<group>"; };
+		A6911C6113D95ACB00DB0B4C /* Scrubs02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scrubs02.png; sourceTree = "<group>"; };
+		A6911C6213D95ACB00DB0B4C /* Scrubs03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scrubs03.png; sourceTree = "<group>"; };
+		A6911C6313D95ACB00DB0B4C /* Scrubs04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scrubs04.png; sourceTree = "<group>"; };
+		A6911C6E13DA06F800DB0B4C /* VisualThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualThemeManager.h; sourceTree = "<group>"; };
+		A6911C6F13DA06FC00DB0B4C /* VisualThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualThemeManager.m; sourceTree = "<group>"; };
+		A6911C7113DA241700DB0B4C /* Wood1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wood1.png; sourceTree = "<group>"; };
+		A6911C7F13DA6B4100DB0B4C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		A699D46C132EE6990087895F /* PatientTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientTableViewCell.h; sourceTree = "<group>"; };
+		A699D46D132EE6990087895F /* PatientTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientTableViewCell.m; sourceTree = "<group>"; };
+		A699D46F132EE7500087895F /* PatientsByNameDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientsByNameDataSource.h; sourceTree = "<group>"; };
+		A699D470132EE7500087895F /* PatientsByNameDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientsByNameDataSource.m; sourceTree = "<group>"; };
+		A699D66B133099E50087895F /* ParentViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewDelegate.h; sourceTree = "<group>"; };
+		A699D6B413313FD30087895F /* PatientDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientDataSource.h; sourceTree = "<group>"; };
+		A699D6B513313FD30087895F /* PatientDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientDataSource.m; sourceTree = "<group>"; };
+		A699DB251333D3870087895F /* TableCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellFactory.h; sourceTree = "<group>"; };
+		A699DB261333D3870087895F /* TableCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCellFactory.m; sourceTree = "<group>"; };
+		A6A2738017654BE7005EBE71 /* Scrubs03-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scrubs03-568@2x.png"; sourceTree = "<group>"; };
+		A6A2738117654BE7005EBE71 /* Scrubs01-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scrubs01-568@2x.png"; sourceTree = "<group>"; };
+		A6A2738217654BE7005EBE71 /* Scrubs02-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scrubs02-568@2x.png"; sourceTree = "<group>"; };
+		A6A2738317654BE7005EBE71 /* Scrubs04-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scrubs04-568@2x.png"; sourceTree = "<group>"; };
+		A6A2738417654BE7005EBE71 /* Leather-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leather-568@2x.png"; sourceTree = "<group>"; };
+		A6A2738517654BE7005EBE71 /* Wood1-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wood1-568@2x.png"; sourceTree = "<group>"; };
+		A6A2738617654BE7005EBE71 /* Wood2-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wood2-568@2x.png"; sourceTree = "<group>"; };
+		A6A2738717654BE7005EBE71 /* X-Ray03-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X-Ray03-568@2x.png"; sourceTree = "<group>"; };
+		A6A2738A17654BE7005EBE71 /* X-Ray04-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X-Ray04-568@2x.png"; sourceTree = "<group>"; };
+		A6A2738B17654BE7005EBE71 /* X-Ray02-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X-Ray02-568@2x.png"; sourceTree = "<group>"; };
+		A6A2738C17654BE7005EBE71 /* X-Ray01-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X-Ray01-568@2x.png"; sourceTree = "<group>"; };
+		A6A2739A17654DC9005EBE71 /* Pills01-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pills01-568@2x.png"; sourceTree = "<group>"; };
+		A6A2739B17654DC9005EBE71 /* Pills02-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pills02-568@2x.png"; sourceTree = "<group>"; };
+		A6A2739C17654DC9005EBE71 /* Pills03-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pills03-568@2x.png"; sourceTree = "<group>"; };
+		A6A2739D17654DC9005EBE71 /* Pills04-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pills04-568@2x.png"; sourceTree = "<group>"; };
+		A6A354FC13F99C3B00642F92 /* HtmlReportHeader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HtmlReportHeader.txt; path = html/HtmlReportHeader.txt; sourceTree = "<group>"; };
+		A6A354FE13F99C4700642F92 /* HtmlReportFooter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HtmlReportFooter.txt; path = html/HtmlReportFooter.txt; sourceTree = "<group>"; };
+		A6A3550013F99C5700642F92 /* HtmlVisitHeader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HtmlVisitHeader.txt; path = html/HtmlVisitHeader.txt; sourceTree = "<group>"; };
+		A6A3550213F99C6100642F92 /* HtmlPrescriptionBody1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HtmlPrescriptionBody1.txt; path = html/HtmlPrescriptionBody1.txt; sourceTree = "<group>"; };
+		A6A3550313F99C6100642F92 /* HtmlPrescriptionBody2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HtmlPrescriptionBody2.txt; path = html/HtmlPrescriptionBody2.txt; sourceTree = "<group>"; };
+		A6A3550413F99C6100642F92 /* HtmlPrescriptionBody3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HtmlPrescriptionBody3.txt; path = html/HtmlPrescriptionBody3.txt; sourceTree = "<group>"; };
+		A6A3550513F99C6100642F92 /* HtmlPrescriptionFooter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HtmlPrescriptionFooter.txt; path = html/HtmlPrescriptionFooter.txt; sourceTree = "<group>"; };
+		A6A3550613F99C6100642F92 /* HtmlPrescriptionHeader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HtmlPrescriptionHeader.txt; path = html/HtmlPrescriptionHeader.txt; sourceTree = "<group>"; };
+		A6A3550713F99C6100642F92 /* HtmlVisitBody1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HtmlVisitBody1.txt; path = html/HtmlVisitBody1.txt; sourceTree = "<group>"; };
+		A6A3550813F99C6100642F92 /* HtmlVisitBody2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HtmlVisitBody2.txt; path = html/HtmlVisitBody2.txt; sourceTree = "<group>"; };
+		A6A3550913F99C6100642F92 /* HtmlVisitFooter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HtmlVisitFooter.txt; path = html/HtmlVisitFooter.txt; sourceTree = "<group>"; };
+		A6A3A387132460CF0067CCB6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A6A3A388132460CF0067CCB6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A6A3A3EC1324ABCC0067CCB6 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		A6A3A3ED1324ABCC0067CCB6 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		A6A3A3EE1324ABCC0067CCB6 /* Medication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medication.h; sourceTree = "<group>"; };
+		A6A3A3EF1324ABCC0067CCB6 /* Medication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medication.m; sourceTree = "<group>"; };
+		A6A3A3F01324ABCC0067CCB6 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		A6A3A3F11324ABCC0067CCB6 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		A6A3A3F21324ABCC0067CCB6 /* Pharmacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pharmacy.h; sourceTree = "<group>"; };
+		A6A3A3F31324ABCC0067CCB6 /* Pharmacy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pharmacy.m; sourceTree = "<group>"; };
+		A6A3A3F41324ABCC0067CCB6 /* Prescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prescription.h; sourceTree = "<group>"; };
+		A6A3A3F51324ABCC0067CCB6 /* Prescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prescription.m; sourceTree = "<group>"; };
+		A6A3A3FB1324ABFB0067CCB6 /* Visit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visit.h; sourceTree = "<group>"; };
+		A6A3A3FC1324ABFB0067CCB6 /* Visit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Visit.m; sourceTree = "<group>"; };
+		A6A3A477132566220067CCB6 /* VisitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitViewController.h; sourceTree = "<group>"; };
+		A6A3A478132566220067CCB6 /* VisitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitViewController.m; sourceTree = "<group>"; };
+		A6A3A47A132566340067CCB6 /* VisitHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitHistoryViewController.h; sourceTree = "<group>"; };
+		A6A3A47B132566340067CCB6 /* VisitHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitHistoryViewController.m; sourceTree = "<group>"; };
+		A6A3A47D132566FF0067CCB6 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		A6A3A47E132566FF0067CCB6 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		A6A3A58E1325BFB90067CCB6 /* RxHistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxHistoryView.xib; sourceTree = "<group>"; };
+		A6A3A5901325BFE50067CCB6 /* VisitHistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitHistoryView.xib; sourceTree = "<group>"; };
+		A6A3A5941325C0390067CCB6 /* EditVisitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditVisitView.xib; sourceTree = "<group>"; };
+		A6A3A5961325C0580067CCB6 /* MoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreView.xib; sourceTree = "<group>"; };
+		A6A3A6E113275D0C0067CCB6 /* ApplicationSupervisor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationSupervisor.h; sourceTree = "<group>"; };
+		A6A3A6E213275D0C0067CCB6 /* ApplicationSupervisor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationSupervisor.m; sourceTree = "<group>"; };
+		A6A3A6E6132813A40067CCB6 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		A6A3A6EB132816DA0067CCB6 /* PatientListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientListViewController.h; sourceTree = "<group>"; };
+		A6A3A6EC132816DA0067CCB6 /* PatientListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientListViewController.m; sourceTree = "<group>"; };
+		A6A3A706132819EC0067CCB6 /* PatientListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientListView.xib; sourceTree = "<group>"; };
+		A6A3A71613281E510067CCB6 /* EditPatientView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditPatientView.xib; sourceTree = "<group>"; };
+		A6A3A71813281E700067CCB6 /* EditPatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPatientViewController.h; sourceTree = "<group>"; };
+		A6A3A71913281E700067CCB6 /* EditPatientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPatientViewController.m; sourceTree = "<group>"; };
+		A6A3A77E13282EC30067CCB6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/Constants.h; sourceTree = "<group>"; };
+		A6A7990A132B0D4100395328 /* PatientView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientView.xib; sourceTree = "<group>"; };
+		A6A79913132B0EBF00395328 /* PatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientViewController.h; sourceTree = "<group>"; };
+		A6A79914132B0EBF00395328 /* PatientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientViewController.m; sourceTree = "<group>"; };
+		A6A7996A132B569F00395328 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		A6A7996E132B56BA00395328 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		A6AE849313D4D8FA00B4B72C /* UsageTipsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsageTipsView.xib; sourceTree = "<group>"; };
+		A6AE849513D4DA0100B4B72C /* UsageTipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsageTipsViewController.h; sourceTree = "<group>"; };
+		A6AE849613D4DA0100B4B72C /* UsageTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsageTipsViewController.m; sourceTree = "<group>"; };
+		A6AE849813D4FFBD00B4B72C /* UsageTips.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UsageTips.html; sourceTree = "<group>"; };
+		A6B1AC20138F594C00281BA6 /* OrderedMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedMutableDictionary.h; sourceTree = "<group>"; };
+		A6B1AC21138F594C00281BA6 /* OrderedMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedMutableDictionary.m; sourceTree = "<group>"; };
+		A6B305B813DBD75400A8CF04 /* white_grad_160x37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_grad_160x37.png; sourceTree = "<group>"; };
+		A6B305BD13DC103C00A8CF04 /* NotificationArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationArgs.h; sourceTree = "<group>"; };
+		A6B305BE13DC104300A8CF04 /* NotificationArgs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationArgs.m; sourceTree = "<group>"; };
+		A6B305C013DD1A6100A8CF04 /* brown_grad_160x37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brown_grad_160x37.png; sourceTree = "<group>"; };
+		A6B305C213DD1CD100A8CF04 /* tan_grad_160x37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tan_grad_160x37.png; sourceTree = "<group>"; };
+		A6B7AC8813DF57130015EF6A /* X-Ray03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X-Ray03.png"; sourceTree = "<group>"; };
+		A6B7AC9013E14C8E0015EF6A /* Pills01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pills01.png; sourceTree = "<group>"; };
+		A6B7AC9113E14C8E0015EF6A /* Pills02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pills02.png; sourceTree = "<group>"; };
+		A6B7AC9213E14C8E0015EF6A /* Pills03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pills03.png; sourceTree = "<group>"; };
+		A6B7AC9313E14C8E0015EF6A /* Pills04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pills04.png; sourceTree = "<group>"; };
+		A6B7AC9813E14F9B0015EF6A /* black_grad_160x37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_grad_160x37.png; sourceTree = "<group>"; };
+		A6B97F711350CC83009A3C2D /* PrescriptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrescriptionView.xib; sourceTree = "<group>"; };
+		A6C2734B13427EAC00BF7411 /* ObservableMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObservableMutableArray.h; sourceTree = "<group>"; };
+		A6D832921404B5F700D52B8C /* NSDataCompressionCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataCompressionCategory.h; sourceTree = "<group>"; };
+		A6D832931404B5F700D52B8C /* NSDataCompressionCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataCompressionCategory.m; sourceTree = "<group>"; };
+		A6D832951404B8BD00D52B8C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A6D83299140599C100D52B8C /* FileArchiveResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileArchiveResult.h; sourceTree = "<group>"; };
+		A6D8329A140599C100D52B8C /* FileArchiveResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileArchiveResult.m; sourceTree = "<group>"; };
+		A6DA88EA13A82E9B002C56C8 /* Curbside_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Curbside_Prefix.pch; sourceTree = "<group>"; };
+		A6DA88EB13A82EAF002C56C8 /* Curbside-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Curbside-Info.plist"; sourceTree = "<group>"; };
+		A6DA88ED13A8302B002C56C8 /* Curbside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curbside.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E28F36143A23ED00B6889C /* LookupDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookupDataSource.h; sourceTree = "<group>"; };
+		A6E28F37143A23ED00B6889C /* LookupDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookupDataSource.m; sourceTree = "<group>"; };
+		A6E28F39143A2FD300B6889C /* PharmacyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PharmacyTableViewCell.h; sourceTree = "<group>"; };
+		A6E28F3A143A2FD300B6889C /* PharmacyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PharmacyTableViewCell.m; sourceTree = "<group>"; };
+		A6E28F3C143B84A500B6889C /* PharmacyLookupDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PharmacyLookupDataSource.h; sourceTree = "<group>"; };
+		A6E28F3D143B84A500B6889C /* PharmacyLookupDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PharmacyLookupDataSource.m; sourceTree = "<group>"; };
+		A6E28F3F14423E0100B6889C /* NamedDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NamedDataModel.h; sourceTree = "<group>"; };
+		A6E30939137230F10068406E /* MedicationLookupDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicationLookupDataSource.h; sourceTree = "<group>"; };
+		A6E3093A137230F20068406E /* MedicationLookupDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationLookupDataSource.m; sourceTree = "<group>"; };
+		A6EF14371401932400116AD7 /* ModificationTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModificationTracker.m; sourceTree = "<group>"; };
+		A6EF14381401932500116AD7 /* ModificationTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModificationTracker.h; sourceTree = "<group>"; };
+		A6F23039133AAC48005CDD9D /* EnumsToStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumsToStrings.h; sourceTree = "<group>"; };
+		A6F2303A133AAC48005CDD9D /* EnumsToStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumsToStrings.m; sourceTree = "<group>"; };
+		A6F2303C133BB84C005CDD9D /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		A6F2303D133BB84D005CDD9D /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		A6F2303F133BB8E4005CDD9D /* HistoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDataSource.h; sourceTree = "<group>"; };
+		A6F23040133BB8E5005CDD9D /* HistoryDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDataSource.m; sourceTree = "<group>"; };
+		A6F23042133C0F18005CDD9D /* EditPrescriptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditPrescriptionView.xib; sourceTree = "<group>"; };
+		A6F23044133C0FB8005CDD9D /* RxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxViewController.h; sourceTree = "<group>"; };
+		A6F23045133C0FBA005CDD9D /* RxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RxViewController.m; sourceTree = "<group>"; };
+		A6F23049133C15BE005CDD9D /* VisitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D832961404B8BD00D52B8C /* libz.dylib in Frameworks */,
+				A65C8457135979B80027B407 /* MessageUI.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				A6A7996B132B569F00395328 /* AddressBook.framework in Frameworks */,
+				A6A7996F132B56BA00395328 /* AddressBookUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A6A3A6E113275D0C0067CCB6 /* ApplicationSupervisor.h */,
+				A6A3A6E213275D0C0067CCB6 /* ApplicationSupervisor.m */,
+				1D3623240D0F684500981E51 /* CurbSideAppDelegate.h */,
+				1D3623250D0F684500981E51 /* CurbSideAppDelegate.m */,
+				A6D83299140599C100D52B8C /* FileArchiveResult.h */,
+				A6D8329A140599C100D52B8C /* FileArchiveResult.m */,
+				A6EF14381401932500116AD7 /* ModificationTracker.h */,
+				A6EF14371401932400116AD7 /* ModificationTracker.m */,
+				A6B305BD13DC103C00A8CF04 /* NotificationArgs.h */,
+				A6B305BE13DC104300A8CF04 /* NotificationArgs.m */,
+				A6B1AC20138F594C00281BA6 /* OrderedMutableDictionary.h */,
+				A6B1AC21138F594C00281BA6 /* OrderedMutableDictionary.m */,
+				A6911C6E13DA06F800DB0B4C /* VisualThemeManager.h */,
+				A6911C6F13DA06FC00DB0B4C /* VisualThemeManager.m */,
+				A6A3A30B1322CAE40067CCB6 /* Data Models */,
+				A699D467132EE62F0087895F /* Data Sources */,
+				A699D66A133098F60087895F /* Protocols */,
+				A699D46B132EE6850087895F /* User Interface */,
+				A6A3A37B132428C70067CCB6 /* View Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6DA88ED13A8302B002C56C8 /* Curbside.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A6AE849813D4FFBD00B4B72C /* UsageTips.html */,
+				A6DA88EA13A82E9B002C56C8 /* Curbside_Prefix.pch */,
+				A6DA88EB13A82EAF002C56C8 /* Curbside-Info.plist */,
+				A6A3A77E13282EC30067CCB6 /* Constants.h */,
+				A6F23039133AAC48005CDD9D /* EnumsToStrings.h */,
+				A6F2303A133AAC48005CDD9D /* EnumsToStrings.m */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				A6C2734B13427EAC00BF7411 /* ObservableMutableArray.h */,
+				A6A3A6E6132813A40067CCB6 /* SynthesizeSingleton.h */,
+				A677B9B713576656006D33B9 /* Utilities.h */,
+				A677B9B813576656006D33B9 /* Utilities.m */,
+				A6D832921404B5F700D52B8C /* NSDataCompressionCategory.h */,
+				A6D832931404B5F700D52B8C /* NSDataCompressionCategory.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6F23047133C1537005CDD9D /* Images */,
+				A66AD1FA1425748A0079A8F3 /* InAppSettingsKit */,
+				A6A354FB13F99C1000642F92 /* Report Templates */,
+				A6F23048133C1553005CDD9D /* Views */,
+				A6911C7F13DA6B4100DB0B4C /* Settings.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6D832951404B8BD00D52B8C /* libz.dylib */,
+				A65C8456135979B70027B407 /* MessageUI.framework */,
+				A6A7996E132B56BA00395328 /* AddressBookUI.framework */,
+				A6A7996A132B569F00395328 /* AddressBook.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A66AD1FA1425748A0079A8F3 /* InAppSettingsKit */ = {
+			isa = PBXGroup;
+			children = (
+				A66AD1FB1425748A0079A8F3 /* Controllers */,
+				A66AD2021425748A0079A8F3 /* Models */,
+				A66AD20D1425748A0079A8F3 /* Views */,
+				A66AD21C1425748A0079A8F3 /* Xibs */,
+			);
+			path = InAppSettingsKit;
+			sourceTree = "<group>";
+		};
+		A66AD1FB1425748A0079A8F3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A66AD1FC1425748A0079A8F3 /* IASKAppSettingsViewController.h */,
+				A66AD1FD1425748A0079A8F3 /* IASKAppSettingsViewController.m */,
+				A66AD1FE1425748A0079A8F3 /* IASKAppSettingsWebViewController.h */,
+				A66AD1FF1425748A0079A8F3 /* IASKAppSettingsWebViewController.m */,
+				A66AD2001425748A0079A8F3 /* IASKSpecifierValuesViewController.h */,
+				A66AD2011425748A0079A8F3 /* IASKSpecifierValuesViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A66AD2021425748A0079A8F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A66AD2031425748A0079A8F3 /* IASKSettingsReader.h */,
+				A66AD2041425748A0079A8F3 /* IASKSettingsReader.m */,
+				A66AD2051425748A0079A8F3 /* IASKSettingsStore.h */,
+				A66AD2061425748A0079A8F3 /* IASKSettingsStore.m */,
+				A66AD2071425748A0079A8F3 /* IASKSettingsStoreFile.h */,
+				A66AD2081425748A0079A8F3 /* IASKSettingsStoreFile.m */,
+				A66AD2091425748A0079A8F3 /* IASKSettingsStoreUserDefaults.h */,
+				A66AD20A1425748A0079A8F3 /* IASKSettingsStoreUserDefaults.m */,
+				A66AD20B1425748A0079A8F3 /* IASKSpecifier.h */,
+				A66AD20C1425748A0079A8F3 /* IASKSpecifier.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A66AD20D1425748A0079A8F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A66AD20E1425748A0079A8F3 /* IASKPSSliderSpecifierViewCell.h */,
+				A66AD20F1425748A0079A8F3 /* IASKPSSliderSpecifierViewCell.m */,
+				A66AD2101425748A0079A8F3 /* IASKPSTextFieldSpecifierViewCell.h */,
+				A66AD2111425748A0079A8F3 /* IASKPSTextFieldSpecifierViewCell.m */,
+				A66AD2121425748A0079A8F3 /* IASKPSTitleValueSpecifierViewCell.h */,
+				A66AD2131425748A0079A8F3 /* IASKPSTitleValueSpecifierViewCell.m */,
+				A66AD2141425748A0079A8F3 /* IASKPSToggleSwitchSpecifierViewCell.h */,
+				A66AD2151425748A0079A8F3 /* IASKPSToggleSwitchSpecifierViewCell.m */,
+				A66AD2161425748A0079A8F3 /* IASKSlider.h */,
+				A66AD2171425748A0079A8F3 /* IASKSlider.m */,
+				A66AD2181425748A0079A8F3 /* IASKSwitch.h */,
+				A66AD2191425748A0079A8F3 /* IASKSwitch.m */,
+				A66AD21A1425748A0079A8F3 /* IASKTextField.h */,
+				A66AD21B1425748A0079A8F3 /* IASKTextField.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A66AD21C1425748A0079A8F3 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				A66AD21D1425748A0079A8F3 /* IASKAppSettingsView.xib */,
+				A66AD21E1425748A0079A8F3 /* IASKAppSettingsWebView.xib */,
+				A66AD21F1425748A0079A8F3 /* IASKPSSliderSpecifierViewCell.xib */,
+				A66AD2201425748A0079A8F3 /* IASKPSTextFieldSpecifierViewCell.xib */,
+				A66AD2211425748A0079A8F3 /* IASKPSToggleSwitchSpecifierViewCell.xib */,
+				A66AD2221425748A0079A8F3 /* IASKSpecifierValuesView.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		A699D467132EE62F0087895F /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A6022E8C1379EE16003525ED /* ContactListDataSource.h */,
+				A6022E8D1379EE17003525ED /* ContactListDataSource.m */,
+				A6F2303F133BB8E4005CDD9D /* HistoryDataSource.h */,
+				A6F23040133BB8E5005CDD9D /* HistoryDataSource.m */,
+				A6E28F36143A23ED00B6889C /* LookupDataSource.h */,
+				A6E28F37143A23ED00B6889C /* LookupDataSource.m */,
+				A6E30939137230F10068406E /* MedicationLookupDataSource.h */,
+				A6E3093A137230F20068406E /* MedicationLookupDataSource.m */,
+				A699D46F132EE7500087895F /* PatientsByNameDataSource.h */,
+				A699D470132EE7500087895F /* PatientsByNameDataSource.m */,
+				A699D6B413313FD30087895F /* PatientDataSource.h */,
+				A699D6B513313FD30087895F /* PatientDataSource.m */,
+				A61736EF134556C100B5B33F /* PatientLookupDataSource.h */,
+				A61736F0134556C100B5B33F /* PatientLookupDataSource.m */,
+				A6E28F3C143B84A500B6889C /* PharmacyLookupDataSource.h */,
+				A6E28F3D143B84A500B6889C /* PharmacyLookupDataSource.m */,
+				A67159AC134D992100842C72 /* RxListDataSource.h */,
+				A67159AD134D992100842C72 /* RxListDataSource.m */,
+				A6720A171377706C0009EAAF /* SimplePickerDataSource.h */,
+				A6720A181377706C0009EAAF /* SimplePickerDataSource.m */,
+				A634451B134BBFCE00A1BA4B /* VisitHistoryDataSource.h */,
+				A634451C134BBFCE00A1BA4B /* VisitHistoryDataSource.m */,
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		A699D46B132EE6850087895F /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A699D46C132EE6990087895F /* PatientTableViewCell.h */,
+				A699D46D132EE6990087895F /* PatientTableViewCell.m */,
+				A6E28F39143A2FD300B6889C /* PharmacyTableViewCell.h */,
+				A6E28F3A143A2FD300B6889C /* PharmacyTableViewCell.m */,
+				A6906C1313BCD81F00E89C27 /* SetDefaultMenuItem.h */,
+				A6906C1413BCD81F00E89C27 /* SetDefaultMenuItem.m */,
+				A64BFABE13D8AD2A00689EAD /* StyledTextView.h */,
+				A64BFAC113D8B09100689EAD /* StyledTextView.m */,
+				A699DB251333D3870087895F /* TableCellFactory.h */,
+				A699DB261333D3870087895F /* TableCellFactory.m */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		A699D66A133098F60087895F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A699D66B133099E50087895F /* ParentViewDelegate.h */,
+				A67159AF134DA47F00842C72 /* PropertyChangePublisher.h */,
+				A6906C0A13BCD33900E89C27 /* LongPressEventHandler.h */,
+				A6E28F3F14423E0100B6889C /* NamedDataModel.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		A6A354FB13F99C1000642F92 /* Report Templates */ = {
+			isa = PBXGroup;
+			children = (
+				A6A354FC13F99C3B00642F92 /* HtmlReportHeader.txt */,
+				A6A3550013F99C5700642F92 /* HtmlVisitHeader.txt */,
+				A6A3550713F99C6100642F92 /* HtmlVisitBody1.txt */,
+				A6A3550813F99C6100642F92 /* HtmlVisitBody2.txt */,
+				A6A3550613F99C6100642F92 /* HtmlPrescriptionHeader.txt */,
+				A6A3550213F99C6100642F92 /* HtmlPrescriptionBody1.txt */,
+				A6A3550313F99C6100642F92 /* HtmlPrescriptionBody2.txt */,
+				A6A3550413F99C6100642F92 /* HtmlPrescriptionBody3.txt */,
+				A6A3550513F99C6100642F92 /* HtmlPrescriptionFooter.txt */,
+				A6A3550913F99C6100642F92 /* HtmlVisitFooter.txt */,
+				A6A354FE13F99C4700642F92 /* HtmlReportFooter.txt */,
+			);
+			name = "Report Templates";
+			sourceTree = "<group>";
+		};
+		A6A3A30B1322CAE40067CCB6 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6A3A3EC1324ABCC0067CCB6 /* Contact.h */,
+				A6A3A3ED1324ABCC0067CCB6 /* Contact.m */,
+				A6A3A3EE1324ABCC0067CCB6 /* Medication.h */,
+				A6A3A3EF1324ABCC0067CCB6 /* Medication.m */,
+				A6A3A3F01324ABCC0067CCB6 /* Patient.h */,
+				A6A3A3F11324ABCC0067CCB6 /* Patient.m */,
+				A6A3A3F21324ABCC0067CCB6 /* Pharmacy.h */,
+				A6A3A3F31324ABCC0067CCB6 /* Pharmacy.m */,
+				A6A3A3F41324ABCC0067CCB6 /* Prescription.h */,
+				A6A3A3F51324ABCC0067CCB6 /* Prescription.m */,
+				A6A3A3FB1324ABFB0067CCB6 /* Visit.h */,
+				A6A3A3FC1324ABFB0067CCB6 /* Visit.m */,
+			);
+			name = "Data Models";
+			sourceTree = "<group>";
+		};
+		A6A3A37B132428C70067CCB6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A65C8453135968320027B407 /* AboutViewController.h */,
+				A65C8454135968320027B407 /* AboutViewController.m */,
+				A67159B0134EA0CD00842C72 /* EditRxViewController.h */,
+				A67159B1134EA0CE00842C72 /* EditRxViewController.m */,
+				A6A3A71813281E700067CCB6 /* EditPatientViewController.h */,
+				A6A3A71913281E700067CCB6 /* EditPatientViewController.m */,
+				A677B9B4135401C9006D33B9 /* EditPharmacyViewController.h */,
+				A677B9B5135401CA006D33B9 /* EditPharmacyViewController.m */,
+				A61D12B91343FB7C002415AD /* EditVisitViewController.h */,
+				A61D12BA1343FB7C002415AD /* EditVisitViewController.m */,
+				A6F2303C133BB84C005CDD9D /* HistoryViewController.h */,
+				A6F2303D133BB84D005CDD9D /* HistoryViewController.m */,
+				A6A3A387132460CF0067CCB6 /* MainViewController.h */,
+				A6A3A388132460CF0067CCB6 /* MainViewController.m */,
+				A6A3A47D132566FF0067CCB6 /* MoreViewController.h */,
+				A6A3A47E132566FF0067CCB6 /* MoreViewController.m */,
+				A6A3A6EB132816DA0067CCB6 /* PatientListViewController.h */,
+				A6A3A6EC132816DA0067CCB6 /* PatientListViewController.m */,
+				A6A79913132B0EBF00395328 /* PatientViewController.h */,
+				A6A79914132B0EBF00395328 /* PatientViewController.m */,
+				A6705B8913B262B40038C912 /* PharmacyViewController.h */,
+				A6705B8A13B262B50038C912 /* PharmacyViewController.m */,
+				A6F23044133C0FB8005CDD9D /* RxViewController.h */,
+				A6F23045133C0FBA005CDD9D /* RxViewController.m */,
+				A6AE849513D4DA0100B4B72C /* UsageTipsViewController.h */,
+				A6AE849613D4DA0100B4B72C /* UsageTipsViewController.m */,
+				A677B9B11353F96F006D33B9 /* ViewControllerBase.h */,
+				A677B9B21353F970006D33B9 /* ViewControllerBase.m */,
+				A6A3A47A132566340067CCB6 /* VisitHistoryViewController.h */,
+				A6A3A47B132566340067CCB6 /* VisitHistoryViewController.m */,
+				A6A3A477132566220067CCB6 /* VisitViewController.h */,
+				A6A3A478132566220067CCB6 /* VisitViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A6F23047133C1537005CDD9D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A66AD23E14258DEE0079A8F3 /* gears_26x28.png */,
+				A65C6C9313E72DC300735F86 /* IconBag_57x57.png */,
+				A65C6C9113E72DB800735F86 /* IconBag_114x114.png */,
+				A68E912D17650B2100CE3026 /* LaunchImage.png */,
+				A68E912E17650B2100CE3026 /* LaunchImage@2x.png */,
+				A68E912C17650B2100CE3026 /* LaunchImage-568h@2x.png */,
+				A641C94513F2F08600DD0FF5 /* LogoBag_220x237.png */,
+				A651D010141A9B4D0084AD16 /* LogoBag_232x170.png */,
+				A651D011141A9B4D0084AD16 /* LogoBagBordered_232x170.png */,
+				A64DD91E13BAEB36005D6D8D /* blueCheckmark_15x15.png */,
+				A6B7AC9813E14F9B0015EF6A /* black_grad_160x37.png */,
+				A6B305C013DD1A6100A8CF04 /* brown_grad_160x37.png */,
+				A6911C5C13D8FA9200DB0B4C /* light_blue_grad_160x37.png */,
+				A657ED0713384B3D00A2F670 /* red_gradient.png */,
+				A6B305C213DD1CD100A8CF04 /* tan_grad_160x37.png */,
+				A6B305B813DBD75400A8CF04 /* white_grad_160x37.png */,
+				A64BFABC13D74B1200689EAD /* Leather.png */,
+				A6A2738417654BE7005EBE71 /* Leather-568@2x.png */,
+				A6B7AC9013E14C8E0015EF6A /* Pills01.png */,
+				A6B7AC9113E14C8E0015EF6A /* Pills02.png */,
+				A6B7AC9213E14C8E0015EF6A /* Pills03.png */,
+				A6B7AC9313E14C8E0015EF6A /* Pills04.png */,
+				A6A2739A17654DC9005EBE71 /* Pills01-568@2x.png */,
+				A6A2739B17654DC9005EBE71 /* Pills02-568@2x.png */,
+				A6A2739C17654DC9005EBE71 /* Pills03-568@2x.png */,
+				A6A2739D17654DC9005EBE71 /* Pills04-568@2x.png */,
+				A6911C6013D95ACB00DB0B4C /* Scrubs01.png */,
+				A6911C6113D95ACB00DB0B4C /* Scrubs02.png */,
+				A6911C6213D95ACB00DB0B4C /* Scrubs03.png */,
+				A6911C6313D95ACB00DB0B4C /* Scrubs04.png */,
+				A6A2738117654BE7005EBE71 /* Scrubs01-568@2x.png */,
+				A6A2738217654BE7005EBE71 /* Scrubs02-568@2x.png */,
+				A6A2738017654BE7005EBE71 /* Scrubs03-568@2x.png */,
+				A6A2738317654BE7005EBE71 /* Scrubs04-568@2x.png */,
+				A6911C7113DA241700DB0B4C /* Wood1.png */,
+				A64BFABA13D74AE900689EAD /* Wood2.png */,
+				A6A2738517654BE7005EBE71 /* Wood1-568@2x.png */,
+				A6A2738617654BE7005EBE71 /* Wood2-568@2x.png */,
+				A651D00B14199CBD0084AD16 /* X-Ray01.png */,
+				A651D00A14199CBD0084AD16 /* X-Ray02.png */,
+				A6B7AC8813DF57130015EF6A /* X-Ray03.png */,
+				A651D00C14199CBD0084AD16 /* X-Ray04.png */,
+				A6A2738C17654BE7005EBE71 /* X-Ray01-568@2x.png */,
+				A6A2738B17654BE7005EBE71 /* X-Ray02-568@2x.png */,
+				A6A2738717654BE7005EBE71 /* X-Ray03-568@2x.png */,
+				A6A2738A17654BE7005EBE71 /* X-Ray04-568@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A6F23048133C1553005CDD9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A65C8451135967820027B407 /* AboutView.xib */,
+				A6A3A71613281E510067CCB6 /* EditPatientView.xib */,
+				A6022E8A1379C677003525ED /* EditPharmacyView.xib */,
+				A6F23042133C0F18005CDD9D /* EditPrescriptionView.xib */,
+				A6A3A5941325C0390067CCB6 /* EditVisitView.xib */,
+				28F335F01007B36200424DE2 /* MainView.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				A6A3A5961325C0580067CCB6 /* MoreView.xib */,
+				A6A3A706132819EC0067CCB6 /* PatientListView.xib */,
+				A6A7990A132B0D4100395328 /* PatientView.xib */,
+				A6705B8C13B26A7B0038C912 /* PharmacyView.xib */,
+				A6B97F711350CC83009A3C2D /* PrescriptionView.xib */,
+				A6A3A58E1325BFB90067CCB6 /* RxHistoryView.xib */,
+				A6AE849313D4D8FA00B4B72C /* UsageTipsView.xib */,
+				A6A3A5901325BFE50067CCB6 /* VisitHistoryView.xib */,
+				A6F23049133C15BE005CDD9D /* VisitView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Curbside */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Curbside" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Curbside;
+			productName = StreetSide;
+			productReference = A6DA88ED13A8302B002C56C8 /* Curbside.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Curbside" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Curbside */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				28F335F11007B36200424DE2 /* MainView.xib in Resources */,
+				A6A3A58F1325BFB90067CCB6 /* RxHistoryView.xib in Resources */,
+				A6A3A5911325BFE50067CCB6 /* VisitHistoryView.xib in Resources */,
+				A6A3A5951325C0390067CCB6 /* EditVisitView.xib in Resources */,
+				A6A3A5971325C0580067CCB6 /* MoreView.xib in Resources */,
+				A6A3A707132819EC0067CCB6 /* PatientListView.xib in Resources */,
+				A6A3A71713281E510067CCB6 /* EditPatientView.xib in Resources */,
+				A6A7990B132B0D4100395328 /* PatientView.xib in Resources */,
+				A657ED0813384B3D00A2F670 /* red_gradient.png in Resources */,
+				A6F23043133C0F18005CDD9D /* EditPrescriptionView.xib in Resources */,
+				A6F2304A133C15BE005CDD9D /* VisitView.xib in Resources */,
+				A6B97F721350CC83009A3C2D /* PrescriptionView.xib in Resources */,
+				A65C8452135967820027B407 /* AboutView.xib in Resources */,
+				A6022E8B1379C677003525ED /* EditPharmacyView.xib in Resources */,
+				A6705B8D13B26A7B0038C912 /* PharmacyView.xib in Resources */,
+				A64DD91F13BAEB36005D6D8D /* blueCheckmark_15x15.png in Resources */,
+				A6AE849413D4D8FA00B4B72C /* UsageTipsView.xib in Resources */,
+				A6AE849913D4FFBD00B4B72C /* UsageTips.html in Resources */,
+				A64BFABB13D74AE900689EAD /* Wood2.png in Resources */,
+				A64BFABD13D74B1200689EAD /* Leather.png in Resources */,
+				A6911C5D13D8FA9200DB0B4C /* light_blue_grad_160x37.png in Resources */,
+				A6911C6413D95ACC00DB0B4C /* Scrubs01.png in Resources */,
+				A6911C6513D95ACC00DB0B4C /* Scrubs02.png in Resources */,
+				A6911C6613D95ACC00DB0B4C /* Scrubs03.png in Resources */,
+				A6911C6713D95ACC00DB0B4C /* Scrubs04.png in Resources */,
+				A6911C7213DA241700DB0B4C /* Wood1.png in Resources */,
+				A6911C8013DA6B4600DB0B4C /* Settings.bundle in Resources */,
+				A6B305B913DBD75400A8CF04 /* white_grad_160x37.png in Resources */,
+				A6B305C113DD1A6100A8CF04 /* brown_grad_160x37.png in Resources */,
+				A6B305C313DD1CD100A8CF04 /* tan_grad_160x37.png in Resources */,
+				A6B7AC8913DF57130015EF6A /* X-Ray03.png in Resources */,
+				A6B7AC9413E14C8E0015EF6A /* Pills01.png in Resources */,
+				A6B7AC9513E14C8E0015EF6A /* Pills02.png in Resources */,
+				A6B7AC9613E14C8E0015EF6A /* Pills03.png in Resources */,
+				A6B7AC9713E14C8E0015EF6A /* Pills04.png in Resources */,
+				A6B7AC9913E14F9B0015EF6A /* black_grad_160x37.png in Resources */,
+				A65C6C9213E72DB800735F86 /* IconBag_114x114.png in Resources */,
+				A65C6C9413E72DC300735F86 /* IconBag_57x57.png in Resources */,
+				A641C94613F2F08600DD0FF5 /* LogoBag_220x237.png in Resources */,
+				A6A354FD13F99C3B00642F92 /* HtmlReportHeader.txt in Resources */,
+				A6A354FF13F99C4700642F92 /* HtmlReportFooter.txt in Resources */,
+				A6A3550113F99C5700642F92 /* HtmlVisitHeader.txt in Resources */,
+				A6A3550A13F99C6100642F92 /* HtmlPrescriptionBody1.txt in Resources */,
+				A6A3550B13F99C6100642F92 /* HtmlPrescriptionBody2.txt in Resources */,
+				A6A3550C13F99C6100642F92 /* HtmlPrescriptionBody3.txt in Resources */,
+				A6A3550D13F99C6100642F92 /* HtmlPrescriptionFooter.txt in Resources */,
+				A6A3550E13F99C6100642F92 /* HtmlPrescriptionHeader.txt in Resources */,
+				A6A3550F13F99C6100642F92 /* HtmlVisitBody1.txt in Resources */,
+				A6A3551013F99C6100642F92 /* HtmlVisitBody2.txt in Resources */,
+				A6A3551113F99C6100642F92 /* HtmlVisitFooter.txt in Resources */,
+				A651D00D14199CBD0084AD16 /* X-Ray02.png in Resources */,
+				A651D00E14199CBD0084AD16 /* X-Ray01.png in Resources */,
+				A651D00F14199CBD0084AD16 /* X-Ray04.png in Resources */,
+				A651D012141A9B4D0084AD16 /* LogoBag_232x170.png in Resources */,
+				A651D013141A9B4D0084AD16 /* LogoBagBordered_232x170.png in Resources */,
+				A66AD2321425748A0079A8F3 /* IASKAppSettingsView.xib in Resources */,
+				A66AD2331425748A0079A8F3 /* IASKAppSettingsWebView.xib in Resources */,
+				A66AD2341425748A0079A8F3 /* IASKPSSliderSpecifierViewCell.xib in Resources */,
+				A66AD2351425748A0079A8F3 /* IASKPSTextFieldSpecifierViewCell.xib in Resources */,
+				A66AD2361425748A0079A8F3 /* IASKPSToggleSwitchSpecifierViewCell.xib in Resources */,
+				A66AD2371425748A0079A8F3 /* IASKSpecifierValuesView.xib in Resources */,
+				A66AD23F14258DEE0079A8F3 /* gears_26x28.png in Resources */,
+				A68E912F17650B2100CE3026 /* LaunchImage-568h@2x.png in Resources */,
+				A68E913017650B2100CE3026 /* LaunchImage.png in Resources */,
+				A68E913117650B2100CE3026 /* LaunchImage@2x.png in Resources */,
+				A6A2738D17654BE7005EBE71 /* Scrubs03-568@2x.png in Resources */,
+				A6A2738E17654BE7005EBE71 /* Scrubs01-568@2x.png in Resources */,
+				A6A2738F17654BE7005EBE71 /* Scrubs02-568@2x.png in Resources */,
+				A6A2739017654BE7005EBE71 /* Scrubs04-568@2x.png in Resources */,
+				A6A2739117654BE7005EBE71 /* Leather-568@2x.png in Resources */,
+				A6A2739217654BE7005EBE71 /* Wood1-568@2x.png in Resources */,
+				A6A2739317654BE7005EBE71 /* Wood2-568@2x.png in Resources */,
+				A6A2739417654BE7005EBE71 /* X-Ray03-568@2x.png in Resources */,
+				A6A2739717654BE7005EBE71 /* X-Ray04-568@2x.png in Resources */,
+				A6A2739817654BE7005EBE71 /* X-Ray02-568@2x.png in Resources */,
+				A6A2739917654BE7005EBE71 /* X-Ray01-568@2x.png in Resources */,
+				A6A2739E17654DC9005EBE71 /* Pills01-568@2x.png in Resources */,
+				A6A2739F17654DC9005EBE71 /* Pills02-568@2x.png in Resources */,
+				A6A273A017654DC9005EBE71 /* Pills03-568@2x.png in Resources */,
+				A6A273A117654DC9005EBE71 /* Pills04-568@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* CurbSideAppDelegate.m in Sources */,
+				A6A3A38A132460CF0067CCB6 /* MainViewController.m in Sources */,
+				A6A3A3F61324ABCC0067CCB6 /* Contact.m in Sources */,
+				A6A3A3F71324ABCC0067CCB6 /* Medication.m in Sources */,
+				A6A3A3F81324ABCC0067CCB6 /* Patient.m in Sources */,
+				A6A3A3F91324ABCC0067CCB6 /* Pharmacy.m in Sources */,
+				A6A3A3FA1324ABCC0067CCB6 /* Prescription.m in Sources */,
+				A6A3A3FD1324ABFB0067CCB6 /* Visit.m in Sources */,
+				A6A3A479132566220067CCB6 /* VisitViewController.m in Sources */,
+				A6A3A47C132566340067CCB6 /* VisitHistoryViewController.m in Sources */,
+				A6A3A47F132566FF0067CCB6 /* MoreViewController.m in Sources */,
+				A6A3A6E313275D0C0067CCB6 /* ApplicationSupervisor.m in Sources */,
+				A6A3A6ED132816DA0067CCB6 /* PatientListViewController.m in Sources */,
+				A6A3A71A13281E700067CCB6 /* EditPatientViewController.m in Sources */,
+				A6A79915132B0EBF00395328 /* PatientViewController.m in Sources */,
+				A699D46E132EE6990087895F /* PatientTableViewCell.m in Sources */,
+				A699D471132EE7500087895F /* PatientsByNameDataSource.m in Sources */,
+				A699D6B613313FD30087895F /* PatientDataSource.m in Sources */,
+				A699DB271333D3870087895F /* TableCellFactory.m in Sources */,
+				A6F2303B133AAC48005CDD9D /* EnumsToStrings.m in Sources */,
+				A6F2303E133BB851005CDD9D /* HistoryViewController.m in Sources */,
+				A6F23041133BB8E6005CDD9D /* HistoryDataSource.m in Sources */,
+				A6F23046133C0FBE005CDD9D /* RxViewController.m in Sources */,
+				A61D12BB1343FB7C002415AD /* EditVisitViewController.m in Sources */,
+				A61736F1134556C200B5B33F /* PatientLookupDataSource.m in Sources */,
+				A634451D134BBFCE00A1BA4B /* VisitHistoryDataSource.m in Sources */,
+				A67159AE134D992100842C72 /* RxListDataSource.m in Sources */,
+				A67159B2134EA0CE00842C72 /* EditRxViewController.m in Sources */,
+				A677B9B31353F971006D33B9 /* ViewControllerBase.m in Sources */,
+				A677B9B6135401CB006D33B9 /* EditPharmacyViewController.m in Sources */,
+				A677B9B913576657006D33B9 /* Utilities.m in Sources */,
+				A65C8455135968330027B407 /* AboutViewController.m in Sources */,
+				A6E3093B137230F20068406E /* MedicationLookupDataSource.m in Sources */,
+				A6720A191377706C0009EAAF /* SimplePickerDataSource.m in Sources */,
+				A6022E8E1379EE17003525ED /* ContactListDataSource.m in Sources */,
+				A6B1AC22138F594C00281BA6 /* OrderedMutableDictionary.m in Sources */,
+				A6705B8B13B262B50038C912 /* PharmacyViewController.m in Sources */,
+				A6906C1513BCD81F00E89C27 /* SetDefaultMenuItem.m in Sources */,
+				A6AE849713D4DA0100B4B72C /* UsageTipsViewController.m in Sources */,
+				A64BFAC213D8B09100689EAD /* StyledTextView.m in Sources */,
+				A6911C7013DA070200DB0B4C /* VisualThemeManager.m in Sources */,
+				A6B305BF13DC104B00A8CF04 /* NotificationArgs.m in Sources */,
+				A6EF14391401932600116AD7 /* ModificationTracker.m in Sources */,
+				A6D832941404B5F700D52B8C /* NSDataCompressionCategory.m in Sources */,
+				A6D8329B140599C200D52B8C /* FileArchiveResult.m in Sources */,
+				A66AD2231425748A0079A8F3 /* IASKAppSettingsViewController.m in Sources */,
+				A66AD2241425748A0079A8F3 /* IASKAppSettingsWebViewController.m in Sources */,
+				A66AD2251425748A0079A8F3 /* IASKSpecifierValuesViewController.m in Sources */,
+				A66AD2261425748A0079A8F3 /* IASKSettingsReader.m in Sources */,
+				A66AD2271425748A0079A8F3 /* IASKSettingsStore.m in Sources */,
+				A66AD2281425748A0079A8F3 /* IASKSettingsStoreFile.m in Sources */,
+				A66AD2291425748A0079A8F3 /* IASKSettingsStoreUserDefaults.m in Sources */,
+				A66AD22A1425748A0079A8F3 /* IASKSpecifier.m in Sources */,
+				A66AD22B1425748A0079A8F3 /* IASKPSSliderSpecifierViewCell.m in Sources */,
+				A66AD22C1425748A0079A8F3 /* IASKPSTextFieldSpecifierViewCell.m in Sources */,
+				A66AD22D1425748A0079A8F3 /* IASKPSTitleValueSpecifierViewCell.m in Sources */,
+				A66AD22E1425748A0079A8F3 /* IASKPSToggleSwitchSpecifierViewCell.m in Sources */,
+				A66AD22F1425748A0079A8F3 /* IASKSlider.m in Sources */,
+				A66AD2301425748A0079A8F3 /* IASKSwitch.m in Sources */,
+				A66AD2311425748A0079A8F3 /* IASKTextField.m in Sources */,
+				A6E28F38143A23EE00B6889C /* LookupDataSource.m in Sources */,
+				A6E28F3B143A2FD300B6889C /* PharmacyTableViewCell.m in Sources */,
+				A6E28F3E143B84A600B6889C /* PharmacyLookupDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gregory N. Walker (X62R2G56WX)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Curbside_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "Curbside-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = Curbside;
+				PROVISIONING_PROFILE = "57EB0925-F4E0-417B-AB5D-0364C154968B";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv6 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gregory N. Walker (X62R2G56WX)";
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Curbside_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "Curbside-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = Curbside;
+				PROVISIONING_PROFILE = "57EB0925-F4E0-417B-AB5D-0364C154968B";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 armv7s";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gregory N. Walker (X62R2G56WX)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_EXCEPTIONS = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUG;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INSTALL_PATH[sdk=*]" = /Applications;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_VERSION = 1.3.2d;
+				PROVISIONING_PROFILE = "57EB0925-F4E0-417B-AB5D-0364C154968B";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gregory N. Walker (X62R2G56WX)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = NDEBUG;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INSTALL_PATH[sdk=*]" = /Applications;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_VERSION = 1.3.2;
+				PROVISIONING_PROFILE = "57EB0925-F4E0-417B-AB5D-0364C154968B";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Curbside" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Curbside" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

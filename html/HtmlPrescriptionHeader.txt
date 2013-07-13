@@ -1,0 +1,8 @@
+<tr>
+  <td>
+    <table style="text-align: left; width: 100%; height: 100%; margin-left: auto; margin-right: 0px;" cellpadding="0">
+      <tbody>
+        <tr style="background-color: rgb(190, 216, 234);">
+          <td style="vertical-align: middle; text-align: left; height: 25px;">Prescriptions</td>
+        </tr>
+

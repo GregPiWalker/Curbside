@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=iso-8859-1" http-equiv="content-type">
+      <title>${report.title}</title>
+      <style type="text/css" media="screen">
+<!--
+td { font-family: Arial; }
+--></style>
+    </head>
+    <body>
+      <table style="border: 1px solid rgb(0, 0, 0); width: 80%; height: 100%; background-color: rgb(255, 255, 255);" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="height: 40px; text-align: left; vertical-align: middle;">
+              <h2 style="text-align: center;"><span>Patient:&nbsp;${patient.fullName}</span></h2>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table style="text-align: left; width: 100%; height: 100%;" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Email Reports To</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>Key</key>
+			<string>reportDestinationKey</string>
+			<key>KeyboardType</key>
+			<string>EmailAddress</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Send Automatic Report For</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>autogenReportKey</string>
+			<key>Title</key>
+			<string>New Visit</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Look And Feel</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>nameSortSelectorKey</string>
+			<key>DefaultValue</key>
+			<integer>2</integer>
+			<key>Title</key>
+			<string>View Patients By</string>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Titles</key>
+			<array>
+				<string>First Name</string>
+				<string>Last Name</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>dateSortSelectorKey</string>
+			<key>Title</key>
+			<string>View Visits By</string>
+			<key>DefaultValue</key>
+			<integer>1</integer>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Titles</key>
+			<array>
+				<string>Ascending Date</string>
+				<string>Descending Date</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>-1</integer>
+				<integer>1</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>themeSelectorKey</string>
+			<key>DefaultValue</key>
+			<integer>3</integer>
+			<key>Title</key>
+			<string>Select Theme</string>
+			<key>Titles</key>
+			<array>
+				<string>Leather</string>
+				<string>Pills</string>
+				<string>Scrubs</string>
+				<string>Wood</string>
+				<string>X-Rays</string>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+			</array>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>
