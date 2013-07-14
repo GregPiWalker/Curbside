@@ -2,9 +2,9 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">12D78</string>
+		<string key="IBDocument.SystemVersion">12E55</string>
 		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.37</string>
+		<string key="IBDocument.AppKitVersion">1187.39</string>
 		<string key="IBDocument.HIToolboxVersion">626.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -47,7 +47,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{105, 146}, {67, 21}}</string>
 						<reference key="NSSuperview" ref="154734895"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1071891717"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -82,7 +81,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{180, 146}, {65, 21}}</string>
 						<reference key="NSSuperview" ref="154734895"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="168429678"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -103,8 +101,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{80, 359}, {160, 37}}</string>
 						<reference key="NSSuperview" ref="154734895"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -136,7 +132,6 @@
 						<int key="NSvFlags">306</int>
 						<string key="NSFrame">{{0, 185}, {320, 160}}</string>
 						<reference key="NSSuperview" ref="154734895"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="796776767"/>
 						<object class="NSColor" key="IBUIBackgroundColor" id="469748994">
 							<int key="NSColorSpace">3</int>
@@ -177,7 +172,6 @@ IHRoaXMgc29mdHdhcmUgaW5kaWNhdGVzIHlvdXIgYWdyZWVtZW50IHRvIHRoZXNlIHRlcm1zLg</stri
 						<int key="NSvFlags">293</int>
 						<string key="NSFrame">{{73, 5}, {174, 128}}</string>
 						<reference key="NSSuperview" ref="154734895"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="669892103"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -189,7 +183,6 @@ IHRoaXMgc29mdHdhcmUgaW5kaWNhdGVzIHlvdXIgYWdyZWVtZW50IHRvIHRoZXNlIHRlcm1zLg</stri
 				</object>
 				<string key="NSFrameSize">{320, 416}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="1049325089"/>
 				<reference key="IBUIBackgroundColor" ref="469748994"/>
 				<bool key="IBUIOpaque">NO</bool>
@@ -368,97 +361,7 @@ IHRoaXMgc29mdHdhcmUgaW5kaWNhdGVzIHlvdXIgYWdyZWVtZW50IHRvIHRoZXNlIHRlcm1zLg</stri
 			<nil key="sourceID"/>
 			<int key="maxID">30</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<bool key="EncodedWithXMLCoder">YES</bool>
-				<object class="IBPartialClassDescription">
-					<string key="className">AboutViewController</string>
-					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">sendFeedbackAction:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">sendFeedbackAction:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">sendFeedbackAction:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
-					<object class="NSMutableDictionary" key="outlets">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>aboutTextView</string>
-							<string>curbLogoLabel</string>
-							<string>feedbackButton</string>
-							<string>logoImage</string>
-							<string>sideLogoLabel</string>
-							<string>versionLabel</string>
-							<string>versionNumberLabel</string>
-						</object>
-						<object class="NSArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>UITextView</string>
-							<string>UILabel</string>
-							<string>UIButton</string>
-							<string>UIImageView</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UILabel</string>
-						</object>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>aboutTextView</string>
-							<string>curbLogoLabel</string>
-							<string>feedbackButton</string>
-							<string>logoImage</string>
-							<string>sideLogoLabel</string>
-							<string>versionLabel</string>
-							<string>versionNumberLabel</string>
-						</object>
-						<object class="NSArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBToOneOutletInfo">
-								<string key="name">aboutTextView</string>
-								<string key="candidateClassName">UITextView</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">curbLogoLabel</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">feedbackButton</string>
-								<string key="candidateClassName">UIButton</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">logoImage</string>
-								<string key="candidateClassName">UIImageView</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">sideLogoLabel</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">versionLabel</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">versionNumberLabel</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/AboutViewController.h</string>
-					</object>
-				</object>
-			</object>
-		</object>
+		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDevelopmentDependencies">

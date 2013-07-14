@@ -585,6 +585,8 @@
 		A699D467132EE62F0087895F /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A684E47917926C2B00DF5C63 /* ArchiveFileDataSource.h */,
+				A684E47A17926C2B00DF5C63 /* ArchiveFileDataSource.m */,
 				A6022E8C1379EE16003525ED /* ContactListDataSource.h */,
 				A6022E8D1379EE17003525ED /* ContactListDataSource.m */,
 				A6F2303F133BB8E4005CDD9D /* HistoryDataSource.h */,
@@ -607,8 +609,6 @@
 				A6720A181377706C0009EAAF /* SimplePickerDataSource.m */,
 				A634451B134BBFCE00A1BA4B /* VisitHistoryDataSource.h */,
 				A634451C134BBFCE00A1BA4B /* VisitHistoryDataSource.m */,
-				A684E47917926C2B00DF5C63 /* ArchiveFileDataSource.h */,
-				A684E47A17926C2B00DF5C63 /* ArchiveFileDataSource.m */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -1081,7 +1081,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				"INSTALL_PATH[sdk=*]" = /Applications;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PRODUCT_VERSION = 1.3.2d;
+				PRODUCT_VERSION = 1.4d;
 				PROVISIONING_PROFILE = "57EB0925-F4E0-417B-AB5D-0364C154968B";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1110,7 +1110,7 @@
 				"INSTALL_PATH[sdk=*]" = /Applications;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_VERSION = 1.3.2;
+				PRODUCT_VERSION = 1.4;
 				PROVISIONING_PROFILE = "57EB0925-F4E0-417B-AB5D-0364C154968B";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
