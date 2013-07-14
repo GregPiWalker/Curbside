@@ -31,6 +31,8 @@
 
 -(NSString *) getDataDirectoryPath;
 
+-(NSString *) getDocumentDirectoryPath;
+
 /// Provided for backward compatibility.
 -(NSString *) getDocumentFilePathForFile: (NSString *)fileName;
 
@@ -242,9 +244,12 @@
 
 /// Provided for backward compatibility.
 -(NSString *) getDocumentFilePathForFile: (NSString *)fileName {
+    return [[self getDocumentDirectoryPath] stringByAppendingPathComponent: fileName];
+}
+
+-(NSString *) getDocumentDirectoryPath {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docsDir = [paths objectAtIndex:0];
-    return [docsDir stringByAppendingPathComponent: fileName];
+    return [paths objectAtIndex:0];
 }
 
 -(void) loadData {
@@ -461,6 +466,36 @@
             }
         }
     }
+}
+
+
+// Gets a list of all available data archives specified by their absolute path.
+-(NSArray *) listArchiveFiles {
+    NSError *lsError = nil;
+    NSString *dirPath = [self getDocumentDirectoryPath];
+    NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:dirPath error:&lsError];
+    NSArray *filteredFiles = nil;
+    
+    if (!lsError) {
+        filteredFiles = [files filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+            NSString *fileName = (NSString *)evaluatedObject;
+            if ([fileName hasSuffix: extArchive] || [fileName hasSuffix: extCompressedArchive]) {
+                return YES;
+            }
+            return NO;
+        }]];
+    }
+    else {
+        //TODO: log error
+        filteredFiles = [NSArray array];
+    }
+    return filteredFiles;
+}
+
+/// Open and import data from a Curbside archive specified by the given file name.
+-(BOOL) importDataFromFile: (NSString *)fileName {
+    NSString *filePath = [[self getDocumentDirectoryPath] stringByAppendingPathComponent:fileName];
+    return [self importDataFromUrl:[NSURL fileURLWithPath:filePath isDirectory:NO]];
 }
 
 /// Open and import data from a Curbside archive specified by the given URL.

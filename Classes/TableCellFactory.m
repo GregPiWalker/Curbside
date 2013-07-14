@@ -87,31 +87,20 @@
 }
 
 /// Create an cell with two immutable labels.
-+(UITableViewCell *) createImmutableDoubleLabelCellForTable: (UITableView *)tableView 
-                                              withIdentifier: (NSString *)reuseIdentifier
-                                                     withTag: (NSInteger)tag 
-                                           withAccessoryType: (UITableViewCellAccessoryType)accessoryType
-                                               withCellStyle: (UITableViewCellStyle)cellStyle
-                                                  firstLabel: (NSString *)label1 
-                                                 secondLabel: (NSString *)label2 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
-    if (cell == nil) {
-        // Create a new cell
-        cell = [[[UITableViewCell alloc] initWithStyle:cellStyle reuseIdentifier:reuseIdentifier] autorelease];
-        [cell setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
-    }
-    
-    cell.accessoryType = accessoryType;
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    if (cellStyle == UITableViewCellStyleSubtitle) {
-        cell.textLabel.font = [UIFont boldSystemFontOfSize: 15];
-    }
-    else {
-        cell.textLabel.font = [UIFont systemFontOfSize: 15];
-    }
-    cell.textLabel.text = label1;
-    //cell.textLabel.textColor = [UIColor blueColor];
-    cell.contentView.tag = tag;
++(UITableViewCell *) createImmutableDoubleLabelCellForTable: (UITableView *)tableView
+                                             withIdentifier: (NSString *)reuseIdentifier
+                                                    withTag: (NSInteger)tag
+                                          withAccessoryType: (UITableViewCellAccessoryType)accessoryType
+                                              withCellStyle: (UITableViewCellStyle)cellStyle
+                                                 firstLabel: (NSString *)label1
+                                                secondLabel: (NSString *)label2 {
+    UITableViewCell *cell = [TableCellFactory createImmutableTextCellForTable:tableView
+                                                               withIdentifier:reuseIdentifier
+                                                                      withTag:tag
+                                                            withAccessoryType:accessoryType
+                                                                withCellStyle:cellStyle
+                                                           withSelectionStyle:UITableViewCellSelectionStyleNone
+                                                                     andLabel:label1];
     
     if (cellStyle != UITableViewCellStyleDefault) {
         if (cellStyle == UITableViewCellStyleSubtitle) {
@@ -123,6 +112,36 @@
         cell.detailTextLabel.text = label2;
         cell.detailTextLabel.textColor = [UIColor blackColor];
     }
+    
+    return cell;
+}
+
+/// Create a cell with just one immutable label.
++(UITableViewCell *) createImmutableTextCellForTable: (UITableView *)tableView
+                                      withIdentifier: (NSString *)reuseIdentifier
+                                             withTag: (NSInteger)tag
+                                   withAccessoryType: (UITableViewCellAccessoryType)accessoryType
+                                       withCellStyle: (UITableViewCellStyle)cellStyle
+                                  withSelectionStyle: (UITableViewCellSelectionStyle)selectionStyle
+                                            andLabel: (NSString *)label {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
+    if (cell == nil) {
+        // Create a new cell
+        cell = [[[UITableViewCell alloc] initWithStyle:cellStyle reuseIdentifier:reuseIdentifier] autorelease];
+        [cell setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+    }
+    
+    cell.accessoryType = accessoryType;
+    cell.selectionStyle = selectionStyle;
+    if (cellStyle == UITableViewCellStyleSubtitle) {
+        cell.textLabel.font = [UIFont boldSystemFontOfSize: 15];
+    }
+    else {
+        cell.textLabel.font = [UIFont systemFontOfSize: 15];
+    }
+    cell.textLabel.text = label;
+    //cell.textLabel.textColor = [UIColor blueColor];
+    cell.contentView.tag = tag;
     
     return cell;
 }

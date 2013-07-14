@@ -65,6 +65,9 @@
 		A677B9B31353F971006D33B9 /* ViewControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A677B9B21353F970006D33B9 /* ViewControllerBase.m */; };
 		A677B9B6135401CB006D33B9 /* EditPharmacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A677B9B5135401CA006D33B9 /* EditPharmacyViewController.m */; };
 		A677B9B913576657006D33B9 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A677B9B813576656006D33B9 /* Utilities.m */; };
+		A684E4751792168100DF5C63 /* ArchiveFileListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A684E4741792168100DF5C63 /* ArchiveFileListView.xib */; };
+		A684E4781792310E00DF5C63 /* ArchiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A684E4771792310E00DF5C63 /* ArchiveListViewController.m */; };
+		A684E47B17926C2B00DF5C63 /* ArchiveFileDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A684E47A17926C2B00DF5C63 /* ArchiveFileDataSource.m */; };
 		A68E912F17650B2100CE3026 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68E912C17650B2100CE3026 /* LaunchImage-568h@2x.png */; };
 		A68E913017650B2100CE3026 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A68E912D17650B2100CE3026 /* LaunchImage.png */; };
 		A68E913117650B2100CE3026 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68E912E17650B2100CE3026 /* LaunchImage@2x.png */; };
@@ -250,6 +253,11 @@
 		A677B9B5135401CA006D33B9 /* EditPharmacyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPharmacyViewController.m; sourceTree = "<group>"; };
 		A677B9B713576656006D33B9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		A677B9B813576656006D33B9 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		A684E4741792168100DF5C63 /* ArchiveFileListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArchiveFileListView.xib; sourceTree = "<group>"; };
+		A684E4761792310E00DF5C63 /* ArchiveListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchiveListViewController.h; sourceTree = "<group>"; };
+		A684E4771792310E00DF5C63 /* ArchiveListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchiveListViewController.m; sourceTree = "<group>"; };
+		A684E47917926C2B00DF5C63 /* ArchiveFileDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchiveFileDataSource.h; sourceTree = "<group>"; };
+		A684E47A17926C2B00DF5C63 /* ArchiveFileDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchiveFileDataSource.m; sourceTree = "<group>"; };
 		A68E912C17650B2100CE3026 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		A68E912D17650B2100CE3026 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		A68E912E17650B2100CE3026 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
@@ -599,6 +607,8 @@
 				A6720A181377706C0009EAAF /* SimplePickerDataSource.m */,
 				A634451B134BBFCE00A1BA4B /* VisitHistoryDataSource.h */,
 				A634451C134BBFCE00A1BA4B /* VisitHistoryDataSource.m */,
+				A684E47917926C2B00DF5C63 /* ArchiveFileDataSource.h */,
+				A684E47A17926C2B00DF5C63 /* ArchiveFileDataSource.m */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -673,6 +683,8 @@
 			children = (
 				A65C8453135968320027B407 /* AboutViewController.h */,
 				A65C8454135968320027B407 /* AboutViewController.m */,
+				A684E4761792310E00DF5C63 /* ArchiveListViewController.h */,
+				A684E4771792310E00DF5C63 /* ArchiveListViewController.m */,
 				A67159B0134EA0CD00842C72 /* EditRxViewController.h */,
 				A67159B1134EA0CE00842C72 /* EditRxViewController.m */,
 				A6A3A71813281E700067CCB6 /* EditPatientViewController.h */,
@@ -764,6 +776,7 @@
 			isa = PBXGroup;
 			children = (
 				A65C8451135967820027B407 /* AboutView.xib */,
+				A684E4741792168100DF5C63 /* ArchiveFileListView.xib */,
 				A6A3A71613281E510067CCB6 /* EditPatientView.xib */,
 				A6022E8A1379C677003525ED /* EditPharmacyView.xib */,
 				A6F23042133C0F18005CDD9D /* EditPrescriptionView.xib */,
@@ -917,6 +930,7 @@
 				A6A2739F17654DC9005EBE71 /* Pills02-568@2x.png in Resources */,
 				A6A273A017654DC9005EBE71 /* Pills03-568@2x.png in Resources */,
 				A6A273A117654DC9005EBE71 /* Pills04-568@2x.png in Resources */,
+				A684E4751792168100DF5C63 /* ArchiveFileListView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -991,6 +1005,8 @@
 				A6E28F38143A23EE00B6889C /* LookupDataSource.m in Sources */,
 				A6E28F3B143A2FD300B6889C /* PharmacyTableViewCell.m in Sources */,
 				A6E28F3E143B84A600B6889C /* PharmacyLookupDataSource.m in Sources */,
+				A684E4781792310E00DF5C63 /* ArchiveListViewController.m in Sources */,
+				A684E47B17926C2B00DF5C63 /* ArchiveFileDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

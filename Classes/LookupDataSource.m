@@ -7,6 +7,7 @@
 //
 
 #import "LookupDataSource.h"
+#import "Constants.h"
 
 @implementation LookupDataSource
 

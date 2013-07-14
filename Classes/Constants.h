@@ -23,6 +23,7 @@ static NSString *const contactsKey = @"contacts";
 static NSString *const patientKey = @"patient";
 static NSString *const prescriptionsKey = @"prescriptions";
 static NSString *const fieldBeingEditedKey = @"fieldBeingEdited";
+static NSString *const selectedItemKey = @"selectedItem";
 
 /// Data Keys
 static NSString *const kDataGroupKeys = @"keysKey";

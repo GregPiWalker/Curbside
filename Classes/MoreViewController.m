@@ -9,6 +9,7 @@
 #import "MoreViewController.h"
 #import "AboutViewController.h"
 #import "UsageTipsViewController.h"
+#import "ArchiveListViewController.h"
 #import "Constants.h"
 #import "FileArchiveResult.h"
 
@@ -18,7 +19,10 @@
 -(void) applyTheme;
 -(void) emailDataArchive: (FileArchiveResult *)archiveResult;
 -(void) showBackupDialog;
--(void) showBackupCompleteAlert;
+-(void) showBackupSavedAlert;
+-(void) showBackupFailedAlert;
+-(void) showImportCompleteAlert;
+-(void) showImportFailedAlert;
 -(void) showEmailNotPermittedAlert;
 -(void) handleThemeChanged: (NSNotification *)n;
 -(void) subscribeToAppNotifications: (BOOL)yesNo;
@@ -59,9 +63,56 @@
     [[ApplicationSupervisor instance].themeManager applyThemeToButton: aboutButton];
     [[ApplicationSupervisor instance].themeManager applyThemeToButton: usageButton];
     [[ApplicationSupervisor instance].themeManager applyThemeToButton: exportButton];
+    [[ApplicationSupervisor instance].themeManager applyThemeToButton: importButton];
     //[[ApplicationSupervisor instance].themeManager applyThemeToButton: medicationsButton];
 }
 
+- (void)dealloc {
+    [self subscribeToAppNotifications:NO];
+    [aboutView release];
+    aboutView = nil;
+    [usageView release];
+    usageView = nil;
+    [appSettingsView release];
+    appSettingsView = nil;
+    [archiveFileListView release];
+    archiveFileListView = nil;
+    self.archiveResult = nil;
+    [super dealloc];
+}
+
+-(void) emailDataArchive: (FileArchiveResult *)result {
+    if ([MFMailComposeViewController canSendMail]) {
+        @try {
+            MFMailComposeViewController *exportMailer = [[MFMailComposeViewController alloc] init];
+            exportMailer.mailComposeDelegate = self;
+            NSString *emailAddr = [ApplicationSupervisor instance].userEmailAddressSetting;
+            if (emailAddr && [emailAddr length] > 0) {
+                // Configure message using the user-defined destination email address.
+                [exportMailer setToRecipients: [NSArray arrayWithObject: emailAddr]];
+            }
+            NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+            [formatter setDateFormat: kDateTimeAmPmFormatterFormat];
+            NSString *subject = [NSString stringWithFormat: @"%@%@", kExportSubjectPrefix, [formatter stringFromDate: result.creationDate]];
+            [formatter release];
+            // Attach the archive as an Curbside data file.
+            [exportMailer addAttachmentData: result.archiveData mimeType: kCurbsideMimeType fileName: result.fileName];
+            [exportMailer setSubject: subject];
+            [exportMailer setMessageBody: @"" isHTML: NO];
+            [self presentModalViewController: exportMailer animated: YES];
+            [exportMailer release];
+        }
+        @catch (NSException *ex) {
+            NSLog(@"Open Email Failed: %@", ex);
+        }
+    }
+    else {
+        [self showEmailNotPermittedAlert];
+    }
+}
+
+
+#pragma mark - Alerts
 -(void) showBackupDialog {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Backup Option" 
                                                     message: @"Send a copy of the backup by email?"
@@ -82,53 +133,44 @@
     [alertView release];
 }
 
--(void) showBackupCompleteAlert {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Backup Successful" 
-                                                        message: @"A backup was saved in Curbside's shared folder. Use iTunes to move it to a safe location." 
-                                                       delegate: nil 
-                                              cancelButtonTitle: @"Ok" 
+-(void) showBackupSavedAlert {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Success!"
+                                                        message: @"A backup was saved in Curbside's shared folder.  Use iTunes to move it to a safe location."
+                                                       delegate: nil
+                                              cancelButtonTitle: @"Ok"
                                               otherButtonTitles: nil];
     [alertView show];
     [alertView release];
 }
 
--(void) emailDataArchive: (FileArchiveResult *)result {
-    if ([MFMailComposeViewController canSendMail]) {
-        @try {
-            MFMailComposeViewController *exportMailer = [[MFMailComposeViewController alloc] init]; 
-            exportMailer.mailComposeDelegate = self;
-            NSString *emailAddr = [ApplicationSupervisor instance].userEmailAddressSetting;
-            if (emailAddr && [emailAddr length] > 0) {
-                // Configure message using the user-defined destination email address.
-                [exportMailer setToRecipients: [NSArray arrayWithObject: emailAddr]];
-            }
-            NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-            [formatter setDateFormat: kDateTimeAmPmFormatterFormat];
-            NSString *subject = [NSString stringWithFormat: @"%@%@", kExportSubjectPrefix, [formatter stringFromDate: result.creationDate]];
-            [formatter release];
-            // Attach the archive as an Curbside data file.
-            [exportMailer addAttachmentData: result.archiveData mimeType: kCurbsideMimeType fileName: result.fileName];
-            [exportMailer setSubject: subject];
-            [exportMailer setMessageBody: @"" isHTML: NO];
-            [self presentModalViewController: exportMailer animated: YES];
-            [exportMailer release];
-        }
-        @catch (NSException *ex) {
-            NSLog(@"Open Email Failed: %@", ex); 
-        }
-    }
-    else {
-        [self showEmailNotPermittedAlert];
-    }
+-(void) showBackupFailedAlert {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Backup Failed"
+                                                        message: @"Curbside failed to archive its data.  Please send a bug report to the developer."
+                                                       delegate: nil
+                                              cancelButtonTitle: @"Ok"
+                                              otherButtonTitles: nil];
+    [alertView show];
+    [alertView release];
 }
 
-- (void)dealloc {
-    [self subscribeToAppNotifications:NO];
-    [aboutView release];
-    [usageView release];
-    [appSettingsView release];
-    self.archiveResult = nil;
-    [super dealloc];
+-(void) showImportCompleteAlert {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Success!"
+                                                        message: @"Curbside successfully imported data from an archive file."
+                                                       delegate: nil
+                                              cancelButtonTitle: @"Ok"
+                                              otherButtonTitles: nil];
+    [alertView show];
+    [alertView release];
+}
+
+-(void) showImportFailedAlert {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Data Import Failed"
+                                                        message: @"Curbside failed to import a data archive.  Please send a bug report to the developer."
+                                                       delegate: nil
+                                              cancelButtonTitle: @"Ok"
+                                              otherButtonTitles: nil];
+    [alertView show];
+    [alertView release];
 }
 
 
@@ -158,6 +200,29 @@
 //    [self.navigationController pushViewController: aboutViewController animated:YES];
 }
 
+-(IBAction) showArchiveListViewAction: (id)sender {
+    if (!archiveFileListView) {
+        // The view controller has not been created yet.
+        archiveFileListView = [[ArchiveListViewController alloc] init];
+        archiveFileListView.parentView = (id<ParentViewDelegate>)self;
+    }
+    [self.navigationController pushViewController: archiveFileListView animated:YES];
+}
+
+-(IBAction) showSettingsModalAction: (id)sender {
+    if (!appSettingsView) {
+		appSettingsView = [[IASKAppSettingsViewController alloc] initWithNibName:@"IASKAppSettingsView" bundle:nil];
+		appSettingsView.delegate = self;
+        appSettingsView.title = @"Curbside Settings";
+    }
+    UINavigationController *aNavController = [[UINavigationController alloc] initWithRootViewController: appSettingsView];
+    //[appSettingsView setShowCreditsFooter:NO];   // Uncomment to not display InAppSettingsKit credits for creators.
+    // But we encourage you not to uncomment. Thank you!
+    appSettingsView.showDoneButton = YES;
+    [self presentModalViewController: aNavController animated: YES];
+    [aNavController release];
+}
+
 -(IBAction) archiveDataAction: (id)sender {
     BOOL success = YES;
     // Show the view overlay to suppress user actions.
@@ -179,23 +244,9 @@
         [self showBackupDialog];
     }
     else {
-        //TODO: alert
         // backup failed
+        [self showBackupFailedAlert];
     }
-}
-
--(IBAction) showSettingsModalAction: (id)sender {
-    if (!appSettingsView) {
-		appSettingsView = [[IASKAppSettingsViewController alloc] initWithNibName:@"IASKAppSettingsView" bundle:nil];
-		appSettingsView.delegate = self;
-        appSettingsView.title = @"Curbside Settings";
-    }
-    UINavigationController *aNavController = [[UINavigationController alloc] initWithRootViewController: appSettingsView];
-    //[appSettingsView setShowCreditsFooter:NO];   // Uncomment to not display InAppSettingsKit credits for creators.
-    // But we encourage you not to uncomment. Thank you!
-    appSettingsView.showDoneButton = YES;
-    [self presentModalViewController: aNavController animated: YES];
-    [aNavController release];
 }
 
 
@@ -263,6 +314,12 @@
 //    usageView = nil;
 }
 
+-(void) dismissChildView: (UIViewController *)child {
+    if (child == archiveFileListView || child == aboutView || child == usageView) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
 
 #pragma mark MFMailComposeViewControllerDelegate Methods
 
@@ -287,7 +344,7 @@
         }
         else {
             [[ApplicationSupervisor instance] saveArchiveToDisk: archiveResult];
-            [self showBackupCompleteAlert];
+            [self showBackupSavedAlert];
         }
         self.archiveResult = nil;
     }

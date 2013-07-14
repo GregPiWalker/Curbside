@@ -37,6 +37,14 @@
                                                   firstLabel: (NSString *)label1 
                                                  secondLabel: (NSString *)label2;
 
++(UITableViewCell *) createImmutableTextCellForTable: (UITableView *)tableView
+                                      withIdentifier: (NSString *)reuseIdentifier
+                                             withTag: (NSInteger)tag
+                                   withAccessoryType: (UITableViewCellAccessoryType)accessoryType
+                                       withCellStyle: (UITableViewCellStyle)cellStyle
+                                  withSelectionStyle: (UITableViewCellSelectionStyle)selectionStyle
+                                            andLabel: (NSString *)label;
+
 ///
 +(UITableViewCell *) createImmutableDoubleLabelCellForTable: (UITableView *)tableView 
                                              withIdentifier: (NSString *)reuseIdentifier

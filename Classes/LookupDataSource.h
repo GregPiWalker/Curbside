@@ -12,7 +12,6 @@
 #import "NamedDataModel.h"
 
 
-static NSString *const selectedItemKey = @"selectedItem";
 static NSString *const useExistingItemKey = @"useExistingItem";
 
 

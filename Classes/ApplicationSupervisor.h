@@ -82,8 +82,14 @@ typedef enum {
 /// Save the given data archive result to a backup file in the app's Documents directory.
 -(void) saveArchiveToDisk: (FileArchiveResult *)archiveResult;
 
+/// Open and import data from a Curbside archive specified by the given file name.
+-(BOOL) importDataFromFile: (NSString *)fileName;
+
 /// Open and import data from a Curbside archive specified by the given URL.
 -(BOOL) importDataFromUrl: (NSURL *)srcUrl;
+
+// Gets a list of all available data archives specified by their name.
+-(NSArray *) listArchiveFiles;
 
 -(void) addThemeSettingChangedObserver: (NSObject *)observer withHandler: (SEL)notificationHandler;
 -(void) removeThemeSettingChangedObserver: (NSObject *)observer;
