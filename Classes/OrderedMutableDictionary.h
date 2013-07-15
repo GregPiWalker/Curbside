@@ -19,4 +19,6 @@ static const NSInteger vOrderedMutableDictionary = 1;
 
 +(id) orderedDictionaryWithDictionary: (NSDictionary *)dict;
 
+-(NSString *) description;
+
 @end

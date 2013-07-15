@@ -89,6 +89,14 @@ static NSString *const dictionaryKey = @"dictionary";
     [super dealloc];
 }
 
+//-(NSString *) description {
+//    NSString *desc = @"";
+//    for (id key in orderedKeys) {
+//        [NSString stringWithFormat:@"%@\"%@\" = %@\n", desc, key, [dictionary objectForKey:key]];
+//    }
+//    return desc;
+//}
+
 
 #pragma mark NSDictionary Primitive Methods
 
@@ -111,19 +119,20 @@ static NSString *const dictionaryKey = @"dictionary";
 #pragma mark NSMutableDictionary Methods
 
 -(void) setObject:(id)anObject forKey:(id)aKey {
-    //[super setObject:anObject forKey:aKey];
     [dictionary setObject:anObject forKey:aKey];
-    [orderedKeys addObject:aKey];
+    // Only add a new ordered key if it doesn't already exist.
+    // If it already exists, then it was replaced in the dictionary.
+    if (![orderedKeys containsObject:aKey]) {
+        [orderedKeys addObject:aKey];
+    }
 }
 
 -(void) removeObjectForKey:(id)aKey {
-    //[super removeObjectForKey:aKey];
     [dictionary removeObjectForKey:aKey];
     [orderedKeys removeObject:aKey];
 }
 
 -(void) removeAllObjects {
-    //[super removeAllObjects];
     [dictionary removeAllObjects];
     [orderedKeys removeAllObjects];
 }
@@ -143,8 +152,8 @@ static NSString *const dictionaryKey = @"dictionary";
 -(NSString *) description {
     NSString *desc = @"{\n";
     int c = 1;
-    for (id key in self) {
-        desc = [desc stringByAppendingFormat: @"\t\t%i. \"%@\" = \"%@\";\n", c++, key, [self objectForKey: key]];
+    for (id key in orderedKeys) {
+        desc = [desc stringByAppendingFormat: @"\t\t%i. \"%@\" = \"%@\";\n", c++, key, [dictionary objectForKey: key]];
     }
     desc = [desc stringByAppendingString: @"}"];
     return desc;
